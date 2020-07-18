@@ -23,7 +23,7 @@ module.exports = {
             },
             { 
                 text: 'Github', 
-                link: 'https://github.com/huixiongyu/huixiongyu.github.io'
+                link: 'https://github.com/huixiongyu/blog'
             }
         ],
         sidebar: {
