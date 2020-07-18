@@ -17,7 +17,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f "https://${GITHUB_TOKEN}@github.com:huixiongyu/huixiongyu.github.io.git" master
+git push --force --quiet "https://${GITHUB_TOKEN}@github.com/huixiongyu/huixiongyu.github.io.git" master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push --force --quiet "https://${GITHUB_TOKEN}@github.com/huixiongyu/huixiongyu.github.io.git" master:gh-pages
