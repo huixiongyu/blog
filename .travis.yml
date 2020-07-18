@@ -1,0 +1,17 @@
+language: node_js
+sudo: required
+node_js:
+  - lts/*
+before_install:
+  - yarn global add vuepress
+  - chmod +x ./deploy.sh
+script: bash ./deploy.sh
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  target_branch: gh-pages
+  keep_history: true
+  on:
+    branch: master
