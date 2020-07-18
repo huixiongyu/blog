@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>《左手MongoDB，右手Redis》 | 灰熊の博客</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/flower.ico">
+    <meta name="description" content="灰熊的博客">
+    <link rel="preload" href="/assets/css/0.styles.1fbdf1a8.css" as="style"><link rel="preload" href="/assets/js/app.630832b4.js" as="script"><link rel="preload" href="/assets/js/2.fd641dc6.js" as="script"><link rel="preload" href="/assets/js/26.228efc54.js" as="script"><link rel="prefetch" href="/assets/js/10.555b9a4f.js"><link rel="prefetch" href="/assets/js/11.d876e17d.js"><link rel="prefetch" href="/assets/js/12.06654427.js"><link rel="prefetch" href="/assets/js/13.dead94b7.js"><link rel="prefetch" href="/assets/js/14.fd142a2b.js"><link rel="prefetch" href="/assets/js/15.1641a19a.js"><link rel="prefetch" href="/assets/js/16.cecbd52e.js"><link rel="prefetch" href="/assets/js/17.5f5202e3.js"><link rel="prefetch" href="/assets/js/18.8838bcd0.js"><link rel="prefetch" href="/assets/js/19.1665e9b8.js"><link rel="prefetch" href="/assets/js/20.a916deb3.js"><link rel="prefetch" href="/assets/js/21.cc37dd12.js"><link rel="prefetch" href="/assets/js/22.da70b1e1.js"><link rel="prefetch" href="/assets/js/23.8f90269a.js"><link rel="prefetch" href="/assets/js/24.dcd27d59.js"><link rel="prefetch" href="/assets/js/25.ee4595fa.js"><link rel="prefetch" href="/assets/js/27.67831758.js"><link rel="prefetch" href="/assets/js/28.255b49a3.js"><link rel="prefetch" href="/assets/js/29.e7508688.js"><link rel="prefetch" href="/assets/js/3.1676bef1.js"><link rel="prefetch" href="/assets/js/30.243464b7.js"><link rel="prefetch" href="/assets/js/31.b343377c.js"><link rel="prefetch" href="/assets/js/32.d34423ae.js"><link rel="prefetch" href="/assets/js/33.f2f77fa3.js"><link rel="prefetch" href="/assets/js/34.9486bf92.js"><link rel="prefetch" href="/assets/js/35.0a642c00.js"><link rel="prefetch" href="/assets/js/36.54b64957.js"><link rel="prefetch" href="/assets/js/37.1c7e9bb3.js"><link rel="prefetch" href="/assets/js/38.6ff117d0.js"><link rel="prefetch" href="/assets/js/39.3928819c.js"><link rel="prefetch" href="/assets/js/4.4a758a06.js"><link rel="prefetch" href="/assets/js/40.6c6ab3c9.js"><link rel="prefetch" href="/assets/js/41.7f992109.js"><link rel="prefetch" href="/assets/js/42.59e6775b.js"><link rel="prefetch" href="/assets/js/43.37b822e7.js"><link rel="prefetch" href="/assets/js/44.00b4527e.js"><link rel="prefetch" href="/assets/js/45.28eebd0b.js"><link rel="prefetch" href="/assets/js/46.caeb5f4d.js"><link rel="prefetch" href="/assets/js/47.169cdf33.js"><link rel="prefetch" href="/assets/js/48.b11209dc.js"><link rel="prefetch" href="/assets/js/49.cc25f2ed.js"><link rel="prefetch" href="/assets/js/5.a09c78bd.js"><link rel="prefetch" href="/assets/js/50.54b7efd5.js"><link rel="prefetch" href="/assets/js/51.a78f7722.js"><link rel="prefetch" href="/assets/js/52.0c9e43ed.js"><link rel="prefetch" href="/assets/js/53.cb5ed84a.js"><link rel="prefetch" href="/assets/js/54.5a7b2c3d.js"><link rel="prefetch" href="/assets/js/55.92870b89.js"><link rel="prefetch" href="/assets/js/56.1dcb3427.js"><link rel="prefetch" href="/assets/js/57.50d4bfed.js"><link rel="prefetch" href="/assets/js/58.3248bd6b.js"><link rel="prefetch" href="/assets/js/59.40d75053.js"><link rel="prefetch" href="/assets/js/6.b43f1f23.js"><link rel="prefetch" href="/assets/js/60.b82c2b81.js"><link rel="prefetch" href="/assets/js/61.8d7f2e0b.js"><link rel="prefetch" href="/assets/js/62.ee66d620.js"><link rel="prefetch" href="/assets/js/63.99b06067.js"><link rel="prefetch" href="/assets/js/64.ff38dbdb.js"><link rel="prefetch" href="/assets/js/65.f5382d15.js"><link rel="prefetch" href="/assets/js/66.f5b3c1a5.js"><link rel="prefetch" href="/assets/js/67.3ab91632.js"><link rel="prefetch" href="/assets/js/68.b260c51e.js"><link rel="prefetch" href="/assets/js/69.a73bf592.js"><link rel="prefetch" href="/assets/js/7.3f6cbb18.js"><link rel="prefetch" href="/assets/js/70.81e50cce.js"><link rel="prefetch" href="/assets/js/71.8854e20d.js"><link rel="prefetch" href="/assets/js/72.5af433a4.js"><link rel="prefetch" href="/assets/js/73.02dc7323.js"><link rel="prefetch" href="/assets/js/74.2eee7b5f.js"><link rel="prefetch" href="/assets/js/75.73b1f511.js"><link rel="prefetch" href="/assets/js/76.deb4abfd.js"><link rel="prefetch" href="/assets/js/77.24604f2b.js"><link rel="prefetch" href="/assets/js/78.22359c20.js"><link rel="prefetch" href="/assets/js/79.5a53d779.js"><link rel="prefetch" href="/assets/js/8.76f5c329.js"><link rel="prefetch" href="/assets/js/80.077a9414.js"><link rel="prefetch" href="/assets/js/81.d99d4088.js"><link rel="prefetch" href="/assets/js/9.aed19548.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fbdf1a8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">灰熊の博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/book/" class="nav-link router-link-active">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/huixiongyu/huixiongyu.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/book/" class="nav-link router-link-active">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/huixiongyu/huixiongyu.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/book/" aria-current="page" class="sidebar-link">阅读</a></li><li><a href="/book/plan-and-record.html" class="sidebar-link">计划与统计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/plan-and-record.html#_2020年计划阅读" class="sidebar-link">2020年计划阅读</a></li><li class="sidebar-sub-header"><a href="/book/plan-and-record.html#_2020已读" class="sidebar-link">2020已读</a></li><li class="sidebar-sub-header"><a href="/book/plan-and-record.html#在读" class="sidebar-link">在读</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>数据库</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/book/DB/01-left-mongodb-right-redis.html" aria-current="page" class="active sidebar-link">《左手MongoDB，右手Redis》</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#一、mongodb基础与入门" class="sidebar-link">一、MongoDB基础与入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#插入操作" class="sidebar-link">插入操作</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#批量插入" class="sidebar-link">批量插入</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#查询数据" class="sidebar-link">查询数据</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#修改数据" class="sidebar-link">修改数据</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#删除数据" class="sidebar-link">删除数据</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#数据去重" class="sidebar-link">数据去重</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#python中使用mongodb" class="sidebar-link">Python中使用MongoDB</a></li></ul></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#二、mongodb高级应用" class="sidebar-link">二、MongoDB高级应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#and和or操作" class="sidebar-link">AND和OR操作</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#嵌入式文档的应用" class="sidebar-link">嵌入式文档的应用</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#查询数组" class="sidebar-link">查询数组</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#聚合查询" class="sidebar-link">聚合查询</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#联集合查询" class="sidebar-link">联集合查询</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#提高读写性能" class="sidebar-link">提高读写性能</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#提高安全性" class="sidebar-link">提高安全性</a></li></ul></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#三、redis快速入门" class="sidebar-link">三、Redis快速入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#创建字符串" class="sidebar-link">创建字符串</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#查询字符串" class="sidebar-link">查询字符串</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#读取字符串" class="sidebar-link">读取字符串</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#修改key里面的值" class="sidebar-link">修改Key里面的值</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#python中使用reids" class="sidebar-link">Python中使用Reids</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#列表的创建、查询和修改" class="sidebar-link">列表的创建、查询和修改</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#集合的操作" class="sidebar-link">集合的操作</a></li></ul></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#四、redis高级应用" class="sidebar-link">四、Redis高级应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#哈希表" class="sidebar-link">哈希表</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#发布消息-订阅消息" class="sidebar-link">发布消息/订阅消息</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#有序集合" class="sidebar-link">有序集合</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#安全管理" class="sidebar-link">安全管理</a></li></ul></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#五、商业实战" class="sidebar-link">五、商业实战</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#布隆过滤器" class="sidebar-link">布隆过滤器</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#查询限制" class="sidebar-link">查询限制</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#硬盘空间释放" class="sidebar-link">硬盘空间释放</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#多redis实例-与-单redis实例多数据库-的差异" class="sidebar-link">“多Redis实例”与“单Redis实例多数据库”的差异</a></li><li class="sidebar-sub-header"><a href="/book/DB/01-left-mongodb-right-redis.html#尽可能为每个key设置过期时间" class="sidebar-link">尽可能为每个Key设置过期时间</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>沟通</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="《左手mongodb，右手redis》"><a href="#《左手mongodb，右手redis》" class="header-anchor">#</a> 《左手MongoDB，右手Redis》</h1> <p><a href="https://www.yuque.com/kingname/wtago8/xwg3gb" target="_blank" rel="noopener noreferrer">配套视频资源<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://github.com/kingname/SourceCodeofMongoRedis" target="_blank" rel="noopener noreferrer">代码下载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>阅读时间：2020年3月12日完成，耗时5h20min</p> <h2 id="一、mongodb基础与入门"><a href="#一、mongodb基础与入门" class="header-anchor">#</a> 一、MongoDB基础与入门</h2> <p><a href="https://www.mongodb.com/download-center/community" target="_blank" rel="noopener noreferrer">MongoDB下载&amp;安装<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>:  <a href="https://www.imooc.com/article/22733" target="_blank" rel="noopener noreferrer">Mac教程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>&amp;<a href="https://www.imooc.com/article/18438" target="_blank" rel="noopener noreferrer">windows教程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Linux下使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo apt update
+sudo apt install -y mongodb
+// 确认是否在运行
+systemctl status mongodb
+// 启动
+sudo systemctl start mongod
+sudo systemctl enable mongod
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><a href="https://robomongo.org/download" target="_blank" rel="noopener noreferrer">Robo 3T下载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Create Database</p> <p>Create Collections...</p> <h3 id="插入操作"><a href="#插入操作" class="header-anchor">#</a> <strong>插入操作</strong></h3> <p>Ctrl + R运行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>db.getCollection('classes').insertOne({&quot;name&quot;: &quot; 张小二 &quot;, &quot;age&quot;: 17,&quot;address&quot;:&quot;浙江&quot;})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在设计数据库时，应尽量保证同一个字段使用同一种类型的数据，并提前考虑好应该有哪些字段。</p> <h3 id="批量插入"><a href="#批量插入" class="header-anchor">#</a> <strong>批量插入</strong></h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>db.getCollection('classes').insertMany({
+	{'name': '朱小三', 'age': 20, 'address': '北京'},
+	{'name': '刘小四', 'age': 21, 'address': '上海'},
+	{'name': '马小伍', 'age': 22, 'address': '广州'}
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>无论是插入一条数据还是插入多条数据，每一条数据被插入 MongoDB 后都会被自动添加一个字段“_id”。“_id”读作“Object Id”，它是由时间、机器码、进程pid和自增计数器构成的。</p> <p>_id前8位转化为十进制为时间戳。</p> <h3 id="查询数据"><a href="#查询数据" class="header-anchor">#</a> <strong>查询数据</strong></h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 1.查询所有
+db.getCollection('example_data_1').find({})
+
+// 2.查询特定的，键值对可以是多个
+db.getCollection('example_data_1').find({'age': 25})
+
+// 3.查询数值范围, 被限定的条件编程了一个字典
+db.getCollection('example_data_1').find({'age': {'$gte': 25}})
+
+// 4.设定返回字段，0的字段不返回，1则返回 ，_id默认是返回，除非指定为0
+db.getCollection('example_data_1').find({}, {'address': 0, 'age': 0})
+
+// 5.修饰返回结果
+// (1)统计数量
+db.getCollection('example_data_1').find({'age': {'$gt': 21}}).count()
+
+// (2)限定返回条数
+db.getCollection('example_data_1').find().limit(4)
+
+// (3)对结果排序，比如倒序
+db.getCollection('example_data_1').find({'age': {'$gt': 21}}).sort({'age': -1})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="修改数据"><a href="#修改数据" class="header-anchor">#</a> <strong>修改数据</strong></h3> <ul><li><p>updateOne：只更新第1条满足要求的数据。</p></li> <li><p>updateMany：更新所有满足要求的数据。</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>db.getCollection('example_data_1').updateMany(
+	{'name': '王小六'},
+	{'$set': {'address': '苏州', 'work': '工程师'}}
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="删除数据"><a href="#删除数据" class="header-anchor">#</a> <strong>删除数据</strong></h3> <p>为了防止误删数据，一般的做法是先查询要删除的数据，然后再将查出的数据删除，工程上会使用字段标记，默认情况deleted为0， 更新为1表示删除。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 返回acknowledged为true表示删除成功，deletedCount表示删除的条数
+db.getCollection('example_data_1').deleteMany({'hello': 'world'})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="数据去重"><a href="#数据去重" class="header-anchor">#</a> 数据去重</h3> <p>参数1：字段名，参数2：查询条件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>db.getCollection('example_data_1').distinct(
+	'age',
+	{'age': {'$gte': 24}}
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><hr> <h3 id="python中使用mongodb"><a href="#python中使用mongodb" class="header-anchor">#</a> Python中使用MongoDB</h3> <p>安装：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>python3 -m pip install pymongo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from pymongo import MongoClient
+client = MongoClient('mongodb://用户名：密码@服务器IP:端口')
+database = client.数据库名
+# 或者 database = client[db_name]
+collection = database.集合名
+# 或者 collection = database[collection_name]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>在Python中使用，找到需要用的collection，驼峰方法都转换为下划线</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># pymongo中， insert()相当于insert_one(),还可以传入字典包含的多个集合，相当于insert_many()
+collection.insert_one({'name': ’王小六’, 'age': 25, 'work': ’厨师’})
+
+# 更新,存在则更新，不存在则插入
+collection.update_many(
+	{'name': '公孙小八'},
+	{'$set', {'address': '美国', 'age': 80}},
+	upsert=True)
+	
+# 删除
+collection.delete_many({'age': 0})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>绝大部分MongoDB命令复制到Python中可以使用</p> <p>例外的是</p> <ul><li>含有null的数据，需要用None替代</li> <li>true/false改写成True/False</li> <li>sort（），Python中接收，第一个字段名，第二个 -1/1</li> <li>ObjectId用bson导入</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>from bson import ObjectId
+collection.find({'_id': ObjectId('5b2f75d26b78a61364d09f45')})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>学习数据库绝对不能仅仅学习数据库本身的命令，一定要配合一门编程语言，这样才能掌握如何应用数据库。</strong></p> <hr> <p><strong>参考：</strong></p> <p><a href="https://docs.mongodb.com/manual/crud/" target="_blank" rel="noopener noreferrer">MongoDB CRUD Operations<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Python中使用<a href="https://api.mongodb.com/python/current/tutorial.html" target="_blank" rel="noopener noreferrer">pymongo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>项目代码：</p> <h2 id="二、mongodb高级应用"><a href="#二、mongodb高级应用" class="header-anchor">#</a> 二、MongoDB高级应用</h2> <h3 id="and和or操作"><a href="#and和or操作" class="header-anchor">#</a> AND和OR操作</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 隐式AND操作
+db.getCollection('example_data_1').find({'age': {'$gt': 20}, 'sex': '男'})
+
+// 显式AND操作
+// collection.find({'$and': [字典1, 字典2, 字典3, ..., 字典n]})
+db.getCollection('example_data_1').find({
+	'$and': [{'age': {'$gt': 20}, {'sex': '男'}}]
+})
+
+// 显式和隐式混合
+db.getCollection('example_data_1').find({
+	'id': {'$lt': 10},
+	'$and': [{'age': {'$gt': 20}}, {'sex': '男'}]
+})
+
+// OR操作
+// 1.显式OR操作
+// collection.find({'$or': [字典1, 字典2, 字典3, ..., 字典n]})
+db.getCollection('example_data_1').find({
+	'$or': [{'age': {'$gt': 28}}, {'salary': {'$gt': 9900}}]
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>OR操作会自动按顺序去检查每一个条件，直到某一个查询条件找到至少一条数据为止。MongoDB在执行OR操作时会遵循一个“短路原则”：只要前面的条件满足了，那后面的条件就直接跳过。</p> <p><strong>OR操作一定是显式的，不存在隐式的OR操作。</strong></p> <h3 id="嵌入式文档的应用"><a href="#嵌入式文档的应用" class="header-anchor">#</a> 嵌入式文档的应用</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 1.使用点号定位嵌套字段
+db.getCollection('example_data_2').find({'user.followed': {'$gt': 10}})
+
+// 2.返回嵌套字段中的特定内容
+db.getCollection('example_data_2').find(
+	{'user.followed': {'$gt': 10}},
+	{'_id': 0, 'user.name': 1, 'user.user_id': 1}	
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="查询数组"><a href="#查询数组" class="header-anchor">#</a> 查询数组</h3> <p>三种情况：</p> <ol><li>数组包含或者不包含某些数据。</li> <li>数组长度。</li> <li>数组中特定位置的数满足某些条件。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 查询数组包含数据
+db.getCollection('example_data_3').find({'size': 'M'})
+
+// 查询数组不含数据
+db.getCollection('example_data_3').find({'size': {'$ne': 'M'}})
+
+// 数组中至少有一个元素在另一个范围空间内
+db.getCollection('example_data_3').find({'price': {'$lt': 300, '$gte': 200}})
+
+// 根据数组长度查询
+db.getCollection('example_data_3').find({'price': {'$size': 2}})
+
+// 根据索引查询数组
+db.getCollection('example_data_3').find({'size.0': 'S'})
+
+// 根据数组索引比较数据的大小
+db.getCollection('example_data_3').find({'price.0': {'$gt': 500}})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="聚合查询"><a href="#聚合查询" class="header-anchor">#</a> 聚合查询</h3> <p>基本格式为： <code>collection.aggregate([阶段1, 阶段2, 阶段3, ..., 阶段N])</code></p> <p>聚合操作可以有0个、1个或者多个阶段。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 这个聚合效果和find()效果完全相同，单好处是组合
+db.getCollection('example_data_1').aggregate([{
+	'$match': {
+		'$or': [{'age': {'$gt': 28}}, {'sex': '男'}]
+	}
+}])
+
+// 添加新字段
+// 1.添加固定文本
+db.getCollection('example_data_1').aggregate([
+	{'$match': {'age': {'$gt': 28}}},
+	{'$project': {'_id': 0, 'sex': 1, 'age': 1, 'hello': 'world'}}
+])
+
+// 2.复制现有字段
+db.getCollection('example_data_1').aggregate([
+	{'$match': {'age': {'$gt': 28}}},
+	{'$project': {'_id': 0, 'sex': 1, 'age': 1, 'hello': '$age'}}
+])
+
+// 3. 修改现有字段的数据
+db.getCollection('example_data_1').aggregate([
+	{'$match': {'age': {'$gt': 28}}},
+	{'$project': {'_id': 0, 'sex': 1, 'age': 'this is page'}}
+])
+
+// 抽取嵌套字段
+db.getCollection('example_data_2').aggregate([
+	{'$project': {'name': '$user.name', 'user_id': '$user.user_id'}}
+])
+
+// 处理特殊字段，下面'$literal'指定了要修改的值为$开头的，和值为1
+db.getCollection('example_data_2').aggregate([
+	{'$project': {'_id': 0, 'id': 1, 'hello': {'$literal': '$normalstring'}, 'abcd': 
+		{'$literal': 1}}}
+])
+
+// 分组操作
+// 1.去重，如果使用distinct函数返回的是数组
+db.getCollection('example_data_4').aggregate([{'$group': {'_id': '$name'}}])
+
+// 2．分组并计算统计值,计算最大值、最小值、得分之和和平均分,{$关键字： $已有的字段}
+// 这里引入了四个关键字：“$max”“$min”“$sum”和“$avg”
+db.getCollection('example_data_4').aggregate([
+	{'$group': 
+		{'_id': '$name',
+		'max_score': {'$max': '$score'},
+		'min_score': {'$min': '$score'},
+		'sum_score': {'$sum': '$score'},
+		'average_score': {'$avg': '$score'}
+		}
+        }
+])
+
+// 3．去重并选择最新或最老的数据
+// 根据不同的统计方法，操作方式可能不止一种
+db.getCollection('example_data_4').aggregate({
+	{'$group': {'_id': '$name',
+		'date': {'$last': '$date'},
+		'score': {'$last': '$score'}
+		}
+	}
+})
+
+// 拆分数组
+db.getCollection('example_data_3').aggregate({
+	{'$unwind': '$size'},
+	{'$unwind': '$price'}
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br></div></div><h3 id="联集合查询"><a href="#联集合查询" class="header-anchor">#</a> 联集合查询</h3> <p>关键字：<strong>$lookup</strong></p> <p>语法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>主集合.aggregate({
+	{'$lookup': {
+		'from': '被查集合名',
+		'localField': '主集合的字段',
+		'foreignField': '被查集合的字段',
+		'as': '保存查询结果的字段名'
+		}
+	}
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>“主集合”与“被查集合”需要搞清楚。如果顺序搞反了，则结果会不同。</p> <p>实例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 在微博集合中查询用户信息,主集合就是微博集合，被查集合就是用户集合
+db.getCollection('example_post').aggregate({
+	{'$lookup': {
+		'from': 'example_user',
+		'localField': 'user_id',
+		'foreignField': 'id',
+		'as': 'user_info'
+		}
+	}
+})
+
+// 美化输出结果，user_info是数组，拆分一下
+// 1.将用户数组展开
+db.getCollection('example_post').aggregate({
+	{'$lookup': {
+		'from': 'example_user',
+		'localField': 'user_id',
+		'foreignField': 'id',
+		'as': 'user_info'
+		}
+	},
+	{'$unwind': '$user_info'}
+})
+
+// 2.提取出“name”字段和“work”字段
+db.getCollection('example_post').aggregate({
+	{'$lookup': {
+		'from': 'example_user',
+		'localField': 'user_id',
+		'foreignField': 'id',
+		'as': 'user_info'
+		}},
+	{'$unwind': '$user_info'},
+	{'$project': {
+		'content': 1,
+		'post_time': 1,
+		'name': '$user_info.name',
+		'work': '$user_info.work'
+	}}
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p>MongoDB聚合功能的核心思想是：充分里面各个阶段的搭配与协作来提前处理数据，从而充分利用MongoDB的性能来提高查询效率。但是在Python有更加强大、直观易用、易调试、易维护的数据分析库Pandas的情况下，是否还需更加深入的去学习MongoDB的聚合功能，需要读者自行权衡。</p> <h3 id="提高读写性能"><a href="#提高读写性能" class="header-anchor">#</a> 提高读写性能</h3> <p>批量比逐条插入好，考虑到远程的带宽，可以借助Redis批量插入到MongoDB。</p> <p>对于必需逐条更新大量数据的情况，也可以使用插入代替更新来提高性能。</p> <p>使用“索引”提高查询速度：如果不使用索引，则每一次查询数据 MongoDB 都会遍历整个集合；而如果使用了索引，则MongoDB会直接根据索引快速找到需要的内容。</p> <p>使用Redis，以降低MongoDB的查询频率，从而提高新闻爬虫的爬取效率。Redis还可以帮助去重。</p> <p>增添适当冗余信息，以提高查询速度。根据已有字段推算出来的，但是对查询性能很有帮助。</p> <h3 id="提高安全性"><a href="#提高安全性" class="header-anchor">#</a> 提高安全性</h3> <p>配置权限管理机制：角色、特权和用户</p> <ol><li>创建管理员用户</li> <li>创建普通用户</li> <li>创建能操作数据库的管理员用户，这个要慎重</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 管理员
+use admin
+db.createUser({
+	user: 'admin',
+	pwd: 'kingnameisgenius',
+	roles: [{role: 'userAdminAnyDatabase', db: 'admin'}]
+})
+exit
+// 以后使用必须先登录
+mongo -u 'admin' -p 'kingnameisgenius' --authenticationDatabase 'admin'
+
+// 普通用户
+use chapter
+db.createUser({
+	user: 'kingname',
+	pwd: 'kingnameisgenius',
+	roles: [{role: 'readWrite', db: 'chapter'},
+		{role: 'read', db: 'capter4'}]
+})
+
+// 能操作数据库的
+user admin
+db.createUser({
+	user: 'root',
+	pwd: 'iamsuperuser',
+	roles: ['root']
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>MongoDB连接：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>一般情况：
+mongodb://用户名：密码@数据库地址：端口/数据库名
+
+// 本地没有权限限制的
+mongodb://localhost
+
+// 本地有账户密码的
+mongodb://kingname:genius@localhost
+
+// 远程有账号密码的
+mongodb://kingname:genius@10.11.212.37
+
+// 远程没有限制但有端口的
+mongodb://10.11.200.100:8001
+
+// 远程，有端口，要密码，有特定数据库
+mongodb://kingname:genius@10.11.111.21:8001/chapter_8
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p><strong>开放外网限制</strong></p> <p>修改mongodb.conf</p> <p><code>bindIp:127.0.0.1</code> 改成：<code>bindIp:0.0.0.0</code></p> <p>最好同时配置防火墙，设定来源的IP访问MongoDB的端口。</p> <h2 id="三、redis快速入门"><a href="#三、redis快速入门" class="header-anchor">#</a> 三、Redis快速入门</h2> <p><a href="https://redis.io/" target="_blank" rel="noopener noreferrer">Redis下载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="http://try.redis.io/" target="_blank" rel="noopener noreferrer">Redis练习网站<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>apt-get update
+apt-get install redis-server
+redis-cli
+// 返回PONG表示成功
+ping
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="创建字符串"><a href="#创建字符串" class="header-anchor">#</a> 创建字符串</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>set key value
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查询字符串"><a href="#查询字符串" class="header-anchor">#</a> 查询字符串</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// keys不建议使用中文
+keys *
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="读取字符串"><a href="#读取字符串" class="header-anchor">#</a> 读取字符串</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 不存在的key返回(nil)
+get a_word
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="修改key里面的值"><a href="#修改key里面的值" class="header-anchor">#</a> 修改Key里面的值</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>set key 新的值
+// 如果不直接覆盖（有不覆盖，无插入）
+set key value NX
+
+// 在末尾添加
+append key value
+
+// 有引号需要使用双括号
+set key &quot;word1 word2 word3&quot;
+
+// 加减
+// 加
+incr key
+
+// 减
+decr key
+
+// 增加n
+incrby key n
+
+// 减少n
+decrby key n
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="python中使用reids"><a href="#python中使用reids" class="header-anchor">#</a> Python中使用Reids</h3> <p>安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>python3 -m pip install redis
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import redis
+client = redis.Redis()
+
+// 创建
+client.set('key', 'value')
+
+// 使用
+client.get('key')
+
+// 非覆盖插入
+ client.set('key', 'value', nx=True)
+ 
+ // 添加在最后
+ client.append('key', 'value')
+ 
+ // 增加、减少,第二个参数默认1
+ client.incr('number_inc')
+ client.decr('number_dec', 10)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>字符串只应用在小量级的数据记录中。如果数据量超过百万级别，那么使用字符串来保存简单的映射关系将会浪费大量内存。此时需要使用Redis的另一种数据结构——Hash。</p> <p>绝对不应该在不清楚当前有多少Key的情况下冒然列出当前所有的Key**</p> <h3 id="列表的创建、查询和修改"><a href="#列表的创建、查询和修改" class="header-anchor">#</a> 列表的创建、查询和修改</h3> <p>列表是Redis的一种基本数据结构，分左右</p> <p>越左边的数据，编号越小。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 列表的插入
+lpush key value1 value2 value3
+rpush key value1 value2 value3
+
+// 查看列表长度
+llen key
+
+// 根据索引查看数据，格式是lrange key 开始索引 结束索引（包括）
+lrange example_list 2 5
+
+//查看所有数据
+lrange key 0 -11
+
+// 弹出数据
+lpop key
+rpop key
+
+// 修改数据
+lset key index 新的值
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>由于一个列表可以储存几百万条数据，所以，<strong>绝对不要冒然列出一个列表里面的所有数据，否则可能导致大量数据输出而瞬间耗尽系统的I/O资源。</strong></p> <p>应该是：先查看列表的长度，如确定数据量很小，则列出所有的值；如果数据量很大，则可以使用索引查看头几条数据与末尾几条数据。</p> <p>Python中列表插入，建议是先把数据放在列表中，然后使用*号，元组的方式导入</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 查看列表长度
+client.llen(key)
+
+# 获取列表中一定索引范围的数据
+client.lrange(key， 开始索引，结束索引)
+
+# 从左右侧弹出数据
+client.lpop(key)
+client.rop(key)
+
+# 修改数据
+client.lset(key, index, value)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>应用场景：多台服务器向用户发送短信</p> <h3 id="集合的操作"><a href="#集合的操作" class="header-anchor">#</a> 集合的操作</h3> <p>集合的数据是不重复的</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 1.插入数据
+sadd key value1 value2 value3
+
+// 2.查询集合中元素的个数
+scard key
+
+// 3.集合中获取数据,如果不填count，则获取1条数据
+spop key count
+
+// 4.获取集合中的所有数据
+smembers key
+
+// 5.检查是否在集合中
+sismember key value
+
+// 6.删除特定数据
+srem key value1 value2 value3
+
+// 7.求集合交集
+sinter key1 key2 key3
+
+// 8.集合并集
+sunion key1 key2 key3
+
+// 9.结合差集
+sdiff key1 key2 key3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>smembers命令不会删除数据。但是如果集合里的数据量极大，就应该慎重使用“获取所有数据”，因为这样会导致系统的I/O资源瞬间被耗尽。</p> <p>在Python中，“spop”关键字没有“count”参数，因此一次只能获取一条数据，不能一次性获取多条数据。如果要一次获取多条数据，则可以使用循环来实现</p> <p>应用场景：实时统计选课集合的数据</p> <p>实战内容：</p> <ul><li>列表裁剪</li> <li>利用key添加过期时间</li> <li>检查Key剩余过期时间</li></ul> <h2 id="四、redis高级应用"><a href="#四、redis高级应用" class="header-anchor">#</a> 四、Redis高级应用</h2> <h3 id="哈希表"><a href="#哈希表" class="header-anchor">#</a> 哈希表</h3> <p>哈希表（Hash Table）是一种数据结构，它实现了“键-值”（Key-Value）的映射。根据Key就能快速找到 Value。</p> <p>Redis的一个哈希表里面可以储存约43亿个键值对。</p> <p>一个哈希表的Key里面可以设置成百上千个键值对。</p> <p><a href="https://instagram-engineering.com/storing-hundreds-of-millions-of-simple-key-value-pairs-in-redis-1091ae80f74c" target="_blank" rel="noopener noreferrer">百万个键值对迁移到哈希表的分享<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>使用：</p> <ul><li>hset一次只能添加一个键值对</li> <li>hmset一次可以添加多个键值对</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>client.hset('Key', ’字段名’, ’值’)
+client.hmset('Key', {’字段名1': ’值1', ’字段名2': ’值2', ’字段名n': ’值n'})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>读取：</p> <p>hkeys用于获取所有字段的字段名，返回的数据是包含bytes型数据的列表</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>field_names = client.hkeys(’哈希表名’)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>获取，没有的返回None</p> <ul><li>hget：获取一个字段的值</li> <li>hmget：一次性获取多个字段的值</li> <li>hgetall：获取一个哈希表中的所有字段名和值</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>client.hget(’哈希表名’, ’字段名’)
+client.hmget(’哈希表名’, [’字段名1', ’字段名2', ’字段名n'])
+client.hgetall(’哈希表名’)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>判断是否存在：<code>client.hexists(’哈希表名’, ’字段名’)</code></p> <p>查看一个哈希表中有多少个字段: <code>client.hlen(’哈希表名’)</code></p> <h3 id="发布消息-订阅消息"><a href="#发布消息-订阅消息" class="header-anchor">#</a> 发布消息/订阅消息</h3> <p>Redis的“发布/订阅”模式是一种消息通信模式，实现了一对多的消息实时发布功能。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 发布消息
+client.publish(’频道名’, ’消息’)
+
+// 订阅频道
+listener = client.pubsub()
+listener.subscribe(’频道名1', ’频道名2', ’频道名n')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="有序集合"><a href="#有序集合" class="header-anchor">#</a> 有序集合</h3> <p>有序集合里面的数据跟集合一样，也是不能重复的，但是每一个元素又关联了一个分数（Score），根据这个分数可以对元素进行排序。分数可以重复。</p> <p>场景应用：排行榜</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>rank = client.zrevrank('rank', 0, 10000, withscores=True)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol><li>向有序集合添加数据</li> <li>修改评分</li> <li>对有序集合元素基于评分范围进行排序
+<ol><li>zrangebyscore根据评分按照从小到大的顺序排序</li> <li>zrevrangebyscore根据评分按照从大到小的顺序排序</li></ol></li> <li>对有序集合基于位置进行排序
+<ol><li>zrange对评分按照从小到大的顺序排序</li> <li>zrevrange对评分按照从大到小的顺序排序</li></ol></li> <li>根据值查询排名，根据值查询评分
+<ol><li>zrank,如果值存在，则返回值的排名。排名是从0开始的，评分越小则排名越靠近0，评分最小的值的排名为0</li> <li>zrevrank,如果值存在，则返回值的排名。排名是从0开始的，评分越大排名越靠近0，评分最大的值的排名为0</li></ol></li> <li>其他常用方法
+<ol><li>zcard： 查询有序集合里面一共有多少个值</li> <li>zcount：查询在某个评分范围内的值有多少</li></ol></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 1.两种方法，这两种方式的效果是一样的，但是第1种的值可以使用变量，而第2种的值不能使用变量
+client.zadd(’有序集合名’， 值1， 评分1， 值2， 评分2， 值n， 评分n)
+client.zadd(’有序集合’， 值1=评分1， 值2=评分2， 值3=评分3)
+
+// 2
+client.zincrby(’有序集合名’， 值，改变量)
+
+// 3
+client.zrangebyscore(’有序集合名’， 评分上限， 评分下限， 结果切片起始位置， 结果数量， withscores=False)
+client.zrevrangebyscore(’有序集合名’， 评分上限， 评分下限， 结果切片起始位置， 结果数量， withscores=False)
+
+// 4
+client.zrange(’有序集合名’， 开始位置（含）， 结束位置（含）, desc=False,withscores=False)
+client.zrevrange(’有序集合名’， 开始位置（含）， 结束位置（含）, withscores=False)
+
+// 5
+client.zrank(’有序列表名’, ’值’)
+client.zrevrank(’有序列表名’, ’值’)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="安全管理"><a href="#安全管理" class="header-anchor">#</a> 安全管理</h3> <p>配置文件把“requirepass”这一行注释</p> <p>“foobared”就是默认密码，可以改成自己的密码</p> <p>然后重启，连接的时候加上-a参数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import redis
+client = redis.Redis(password='密码')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>开放外网访问</strong></p> <p>配置中把bind这一行去掉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>redis-cli –h Redis地址 –p 端口 –a 密码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Python中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import redisclient = redis.Redis(host='192.163.2.10', port=3129, password='kingnameisgenius')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>禁用危险命令</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>rename-command ...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="五、商业实战"><a href="#五、商业实战" class="header-anchor">#</a> 五、商业实战</h2> <p>功能描述</p> <ol><li>类似知乎</li> <li>问题点赞</li> <li>权限管理：登录注册、文章管理</li> <li>标签功能</li></ol> <p>使用“$inc”操作符实现字段自增自减</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>handler.update_one({'_id'： 问题或答案的ObjectId}, {'$inc': {'vote_up': 1}})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>哈希表来存储session</p> <h3 id="布隆过滤器"><a href="#布隆过滤器" class="header-anchor">#</a> 布隆过滤器</h3> <p><strong>布隆过滤器是一种基于概率进行验重的数据结构。它的基本原理是：小概率事件不容易同时发生。</strong></p> <p>布隆过滤器使用多个哈希函数把同一个字符串转换成多个不同的哈希值，并记录这些哈希值的特征。下次再面对一个字符串时，布隆过滤器再次使用这些哈希函数把这个字符串转换为多个哈希值。如果这些哈希值全部符合原先的那个字符串对应的各个哈希值的特征，则认为这两个字符串是相同的。</p> <p>哈希算法不是一种加密算法，而是一种不可逆的摘要算法。</p> <p>Redis内部限制一个字符串最多存储2的32次方个字符</p> <p><strong>布隆过滤器只能添加数据，不能删除数据。</strong></p> <p>应用场景：使用“布隆过滤器”对注册用户进行验重</p> <p>避免注册重复，使用Redis实现一个简单的分布式锁。</p> <h3 id="查询限制"><a href="#查询限制" class="header-anchor">#</a> 查询限制</h3> <p>PyMongo默认会一次性取101行数据，突破限制：</p> <ul><li>batch_size</li> <li>no_cursor_timeout</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>import pymongo
+import time 
+handler = pymongo.MongoClient().chapter_13.test_data
+
+for data in handler.find().batch_size(85):
+	print(f'这一行数据为：{data}')
+	time.sleep(7)
+	
+
+cursor = handler.find(no_cursor_timeout=True)
+for data in cursor:
+	print(f'这一行数据为：{data}')
+	time.sleep()
+cursor.close()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="硬盘空间释放"><a href="#硬盘空间释放" class="header-anchor">#</a> 硬盘空间释放</h3> <p>简单通用的方法</p> <ol><li>把新的数据写入新的集合中</li> <li>老数据里需要留下的部分也重新插入新的集合</li> <li>删除老集合</li> <li>重建索引</li></ol> <h3 id="多redis实例-与-单redis实例多数据库-的差异"><a href="#多redis实例-与-单redis实例多数据库-的差异" class="header-anchor">#</a> “多Redis实例”与“单Redis实例多数据库”的差异</h3> <p>运行多个实例：</p> <p>由于Redis服务的启动命令为：redis-server 配置文件路径所以，只要有多个配置文件，每个配置文件里面保证端口号、日志路径、pid文件路径、数据文件路径不同，就可以通过多次运行此命令来启动多个Redis实例。</p> <p>单Redis多数据库</p> <p>一个Redis实例，实际上自带了16个命名空间互相隔离的数据库。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import redis
+client = redis.Redis(db=2) # 进入编号为“2”的数据库，省略“db”参数表示使用“0”号数据库
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>由于Redis是单线程的数据库，所以，一个实例里的多个数据库的Key可以同名，且互不冲突。但是，一旦其中一个数据库卡住（例如对几百万个Key执行“keys *”命令），那么其他数据库也不能正常使用。一旦对某一个数据库进行了一个比较耗时的操作，那么对其他数据库的操作都会受到影响。一个Redis实例的所有数据库都只能共享CPU的一个核。而如果通过多个配置文件启动多个 Redis 实例，则不会存在这种问题，即使一个实例卡死了，其他的实例仍能正常工作。</p> <h3 id="尽可能为每个key设置过期时间"><a href="#尽可能为每个key设置过期时间" class="header-anchor">#</a> 尽可能为每个Key设置过期时间</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import redis
+client = redis.Redis()
+client.hset('test', 'field', 123)
+client.expire(test, 100) # 第2个参数表示过期时间，单位为秒
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">7/18/2020, 2:14:15 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/book/Python/03-Docker-Deep-Dive.html" class="prev">
+        《深入浅出Docker》
+      </a></span> <span class="next"><a href="/book/communication/nonviolent-communication.html">
+        《非暴力沟通》
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.630832b4.js" defer></script><script src="/assets/js/2.fd641dc6.js" defer></script><script src="/assets/js/26.228efc54.js" defer></script>
+  </body>
+</html>

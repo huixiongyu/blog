@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue经验总结 | 灰熊の博客</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/flower.ico">
+    <meta name="description" content="灰熊的博客">
+    <link rel="preload" href="/assets/css/0.styles.1fbdf1a8.css" as="style"><link rel="preload" href="/assets/js/app.630832b4.js" as="script"><link rel="preload" href="/assets/js/2.fd641dc6.js" as="script"><link rel="preload" href="/assets/js/76.deb4abfd.js" as="script"><link rel="prefetch" href="/assets/js/10.555b9a4f.js"><link rel="prefetch" href="/assets/js/11.d876e17d.js"><link rel="prefetch" href="/assets/js/12.06654427.js"><link rel="prefetch" href="/assets/js/13.dead94b7.js"><link rel="prefetch" href="/assets/js/14.fd142a2b.js"><link rel="prefetch" href="/assets/js/15.1641a19a.js"><link rel="prefetch" href="/assets/js/16.cecbd52e.js"><link rel="prefetch" href="/assets/js/17.5f5202e3.js"><link rel="prefetch" href="/assets/js/18.8838bcd0.js"><link rel="prefetch" href="/assets/js/19.1665e9b8.js"><link rel="prefetch" href="/assets/js/20.a916deb3.js"><link rel="prefetch" href="/assets/js/21.cc37dd12.js"><link rel="prefetch" href="/assets/js/22.da70b1e1.js"><link rel="prefetch" href="/assets/js/23.8f90269a.js"><link rel="prefetch" href="/assets/js/24.dcd27d59.js"><link rel="prefetch" href="/assets/js/25.ee4595fa.js"><link rel="prefetch" href="/assets/js/26.228efc54.js"><link rel="prefetch" href="/assets/js/27.67831758.js"><link rel="prefetch" href="/assets/js/28.255b49a3.js"><link rel="prefetch" href="/assets/js/29.e7508688.js"><link rel="prefetch" href="/assets/js/3.1676bef1.js"><link rel="prefetch" href="/assets/js/30.243464b7.js"><link rel="prefetch" href="/assets/js/31.b343377c.js"><link rel="prefetch" href="/assets/js/32.d34423ae.js"><link rel="prefetch" href="/assets/js/33.f2f77fa3.js"><link rel="prefetch" href="/assets/js/34.9486bf92.js"><link rel="prefetch" href="/assets/js/35.0a642c00.js"><link rel="prefetch" href="/assets/js/36.54b64957.js"><link rel="prefetch" href="/assets/js/37.1c7e9bb3.js"><link rel="prefetch" href="/assets/js/38.6ff117d0.js"><link rel="prefetch" href="/assets/js/39.3928819c.js"><link rel="prefetch" href="/assets/js/4.4a758a06.js"><link rel="prefetch" href="/assets/js/40.6c6ab3c9.js"><link rel="prefetch" href="/assets/js/41.7f992109.js"><link rel="prefetch" href="/assets/js/42.59e6775b.js"><link rel="prefetch" href="/assets/js/43.37b822e7.js"><link rel="prefetch" href="/assets/js/44.00b4527e.js"><link rel="prefetch" href="/assets/js/45.28eebd0b.js"><link rel="prefetch" href="/assets/js/46.caeb5f4d.js"><link rel="prefetch" href="/assets/js/47.169cdf33.js"><link rel="prefetch" href="/assets/js/48.b11209dc.js"><link rel="prefetch" href="/assets/js/49.cc25f2ed.js"><link rel="prefetch" href="/assets/js/5.a09c78bd.js"><link rel="prefetch" href="/assets/js/50.54b7efd5.js"><link rel="prefetch" href="/assets/js/51.a78f7722.js"><link rel="prefetch" href="/assets/js/52.0c9e43ed.js"><link rel="prefetch" href="/assets/js/53.cb5ed84a.js"><link rel="prefetch" href="/assets/js/54.5a7b2c3d.js"><link rel="prefetch" href="/assets/js/55.92870b89.js"><link rel="prefetch" href="/assets/js/56.1dcb3427.js"><link rel="prefetch" href="/assets/js/57.50d4bfed.js"><link rel="prefetch" href="/assets/js/58.3248bd6b.js"><link rel="prefetch" href="/assets/js/59.40d75053.js"><link rel="prefetch" href="/assets/js/6.b43f1f23.js"><link rel="prefetch" href="/assets/js/60.b82c2b81.js"><link rel="prefetch" href="/assets/js/61.8d7f2e0b.js"><link rel="prefetch" href="/assets/js/62.ee66d620.js"><link rel="prefetch" href="/assets/js/63.99b06067.js"><link rel="prefetch" href="/assets/js/64.ff38dbdb.js"><link rel="prefetch" href="/assets/js/65.f5382d15.js"><link rel="prefetch" href="/assets/js/66.f5b3c1a5.js"><link rel="prefetch" href="/assets/js/67.3ab91632.js"><link rel="prefetch" href="/assets/js/68.b260c51e.js"><link rel="prefetch" href="/assets/js/69.a73bf592.js"><link rel="prefetch" href="/assets/js/7.3f6cbb18.js"><link rel="prefetch" href="/assets/js/70.81e50cce.js"><link rel="prefetch" href="/assets/js/71.8854e20d.js"><link rel="prefetch" href="/assets/js/72.5af433a4.js"><link rel="prefetch" href="/assets/js/73.02dc7323.js"><link rel="prefetch" href="/assets/js/74.2eee7b5f.js"><link rel="prefetch" href="/assets/js/75.73b1f511.js"><link rel="prefetch" href="/assets/js/77.24604f2b.js"><link rel="prefetch" href="/assets/js/78.22359c20.js"><link rel="prefetch" href="/assets/js/79.5a53d779.js"><link rel="prefetch" href="/assets/js/8.76f5c329.js"><link rel="prefetch" href="/assets/js/80.077a9414.js"><link rel="prefetch" href="/assets/js/81.d99d4088.js"><link rel="prefetch" href="/assets/js/9.aed19548.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fbdf1a8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">灰熊の博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/huixiongyu/huixiongyu.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/huixiongyu/huixiongyu.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue经验总结"><a href="#vue经验总结" class="header-anchor">#</a> Vue经验总结</h1> <h2 id="_1-vue中导出excel表格"><a href="#_1-vue中导出excel表格" class="header-anchor">#</a> 1. Vue中导出Excel表格</h2> <p><a href="https://blog.csdn.net/mibi8840/article/details/86741982" target="_blank" rel="noopener noreferrer">vue文件下载实现<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://github.com/sunhuihuibuhui/vue-Blob-Export2Excel" target="_blank" rel="noopener noreferrer">Vue-Blob-Excel2Excel<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://segmentfault.com/q/1010000016742846" target="_blank" rel="noopener noreferrer">export2excel.js原生的方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://github.com/eligrey/Blob.js" target="_blank" rel="noopener noreferrer">Blob.js<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_2-移动端无法使用click事件"><a href="#_2-移动端无法使用click事件" class="header-anchor">#</a> 2. 移动端无法使用click事件</h2> <p>Vue在移动端绑定click事件没有反应，可能是因为使用了better-scroll,它默认阻止了click事件，在初始化的时候进行配置：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mounted(){
+    this.scroll=new Bscroll(this.$refs.wrapper, { mouseWheel: true, click: true, tap: true })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_3-基于vue的toast提示框"><a href="#_3-基于vue的toast提示框" class="header-anchor">#</a> 3.基于Vue的toast提示框</h2> <p>https://www.jianshu.com/p/d75cea16edf1</p> <h2 id="_4-使用手机访问vue页面"><a href="#_4-使用手机访问vue页面" class="header-anchor">#</a> 4.使用手机访问Vue页面</h2> <p>内网访问Vue项目，先查看自己的内网地址。Windows环境下win+R输入cmd然后再输入ipconfig找到内网ip
+vue.config.js中把localhost改成自己的内网ip地址</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    devServer: {
+        open: true,
+        host: '192.168.1.133',
+        port: 8080,
+        https: false,
+        proxy: {
+          '/api': {
+            target: 'http://192.168.1.180:8899',
+            changeOrigin: true,
+            ws: true,
+            pathRewrite: {
+              '^/api': ''
+            }
+          }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="_5-引入图片"><a href="#_5-引入图片" class="header-anchor">#</a> 5.引入图片</h2> <p>Vue内联方式引用图片经常出问题，审查元素一般能够显示图片的相对路径，但是无法加载。</p> <p><strong>方法一：</strong> 通过require导入，然后通过方法调用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// HTML代码
+    &lt;div class=&quot;soil-radius&quot;&gt;
+      &lt;img :src=&quot;getImgUrl('soli-temperature')&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+
+// 调用methods中的函数
+    getImgUrl (name) {
+      return require(&quot;@/assets/images/&quot; + name + '.png')
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong>方法二：</strong> 内联路径拼接</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div :style=&quot;{background: 'url('+ imageUrl +')'}&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_6-后台一直有数据请求报错：http-localhost-8080-sockjs-node-info-t-1561624027536"><a href="#_6-后台一直有数据请求报错：http-localhost-8080-sockjs-node-info-t-1561624027536" class="header-anchor">#</a> 6. 后台一直有数据请求报错：http://localhost:8080/sockjs-node/info?t=1561624027536</h2> <h2 id="_7-动态修改页面的标题"><a href="#_7-动态修改页面的标题" class="header-anchor">#</a> 7. 动态修改页面的标题</h2> <p>如果某个路由的页面标题是一直的，可以在router设置的时候设定meta,然后在beforeEach中修改页面标题</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 路由配置
+ {
+     path: '/login',
+     component: Login,
+     meta: {
+        title: '登录'
+     }
+ }
+// 全局路由守卫
+router.beforeEach((to, from, next) =&gt; {
+    /* 路由发生变化修改页面title */
+    if (to.meta.title) {
+        document.title = to.meta.title;
+    }
+    next();
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>如果某个路由是动态路由，可以在全局路由守卫中获取参数，然后修改页面标题</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 路由配置
+  {
+    path: '/:id',
+    name: 'home',
+    component: Home
+  }
+
+// 全局路由守卫
+router.beforeEach((to, from, next) =&gt; {
+  if (to.params.id) {
+    document.title = to.params.id
+  }
+  next()
+})
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="_8-vue中引入ueditor"><a href="#_8-vue中引入ueditor" class="header-anchor">#</a> 8.Vue中引入UEditor</h2> <p><a href="https://github.com/HaoChuan9421/vue-ueditor-wrap" target="_blank" rel="noopener noreferrer">vue-ueditor-wrap<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://juejin.im/post/5b6853eee51d4519601b112d" target="_blank" rel="noopener noreferrer">Vue项目中最简单的使用集成UEditor方式，含图片上传<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://github.com/tinymce/tinymce-vue" target="_blank" rel="noopener noreferrer">tinymce-vue<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_9-vue中引入wangeditor"><a href="#_9-vue中引入wangeditor" class="header-anchor">#</a> 9.Vue中引入WangEditor</h2> <p><a href="https://segmentfault.com/a/1190000016010354" target="_blank" rel="noopener noreferrer">vue + wangEditor小试牛刀<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="http://www.wangeditor.com/" target="_blank" rel="noopener noreferrer">wangEditor官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_10-vue中配置多个spring-boot访问代理"><a href="#_10-vue中配置多个spring-boot访问代理" class="header-anchor">#</a> 10.Vue中配置多个Spring boot访问代理</h2> <h2 id="_11-vue中操作checkbox"><a href="#_11-vue中操作checkbox" class="header-anchor">#</a> 11.Vue中操作checkbox</h2> <p>业务需求是在li标签下有图标，点中图标被选中.
+在Vue中，checkbox所在的input用v-model绑定了value，该v-model是checkbox的checked的语法糖，如果checkbox被选中会自动添加到v-model绑定的数组，反选会从数组中移除。
+因此，我们可以通过操作绑定的数组来实现点击图标的被选中的效果，checkbox就可以通过绝对定位加z-index的方式实现隐藏。在li标签下绑定相应的事件改变数组和动态绑定的样式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 标签
+&lt;ul&gt;
+    &lt;template v-for=&quot;item in channelList&quot; &gt;
+        &lt;li :class=&quot;{'li-selected': item.checked}&quot; :key=&quot;item.value&quot; @click.stop=&quot;handleCheck(item)&quot;&gt;
+            &lt;img :class=&quot;{'img-selected': item.checked}&quot; :src=&quot;getImgUrl(item.value)&quot; alt=&quot;&quot;&gt; 
+            &lt;input type=&quot;checkbox&quot; :value=&quot;item.value&quot; v-model=&quot;channel&quot;&gt;
+            &lt;div :class=&quot;{'name-selected': item.checked}&quot; class=&quot;icon-name&quot;&gt;{{item.name}}&lt;/div&gt; 
+        &lt;/li&gt;   
+    &lt;/template&gt;
+&lt;/ul&gt;
+
+// 数据 
+  data() {
+    return {
+      channel: [],
+      channelList: [
+        {
+            name: '邮件',
+            checked: false,
+            value: 'mail'
+        },
+        {
+            name: '短信',
+            checked: false,
+            value: 'message'
+        },
+        {
+            name: '微信',
+            checked: true,
+            value: 'wechat'
+        },
+        {
+            name: '声讯',
+            checked: false,
+            value: 'tel'
+        },
+        {
+            name: '喇叭',
+            checked: false,
+            value: 'trumpet'
+        },
+        {
+            name: 'App',
+            checked: false,
+            value: 'phone'
+        },
+        {
+            name: '电视',
+            checked: false,
+            value: 'tv'
+        },
+        {
+            name: '传真',
+            checked: false,
+            value: 'fax'
+        },
+        {
+            name: '北斗',
+            checked: false,
+            value: 'satellite'
+        },
+        {
+            name: '网站',
+            checked: false,
+            value: 'web'
+        },
+        {
+            name: '微博',
+            checked: false,
+            value: 'weibo'
+        }
+      ],
+    }
+  }
+
+
+// 绑定的方法
+    methods: {
+        getImgUrl(name) {
+            return require('@/assets/images/channel/'+ name + '.png')
+        },
+        handleCheck(obj) {
+            const index = this.channel.indexOf(obj.value)
+            if(index &gt; -1) {
+                this.channel.splice(index, 1)
+                obj.checked = false
+            }else {
+                this.channel.push(obj.value)
+                obj.checked = true
+            }
+        }
+    }
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br></div></div><p>参考：
+<a href="https://cn.vuejs.org/v2/guide/class-and-style.html" target="_blank" rel="noopener noreferrer">Class与Style绑定<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://blog.csdn.net/mutouren121/article/details/80608587" target="_blank" rel="noopener noreferrer">checkbox数据绑定<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_12-vue实现内滚动"><a href="#_12-vue实现内滚动" class="header-anchor">#</a> 12.Vue实现内滚动</h2> <p><a href="https://github.com/tangdaohai/vue-happy-scroll" target="_blank" rel="noopener noreferrer">vue-happy-scroll<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://juejin.im/post/5b0c0adb6fb9a009ec7e9734" target="_blank" rel="noopener noreferrer">Vue的自定义滚动，我用el-scrollbar<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>结构和样式：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div class=&quot;tree-area&quot;&gt;
+    &lt;el-scrollbar 
+        wrap-class=&quot;list&quot; 
+        wrap-style=&quot;color: red;&quot; 
+        view-style=&quot;font-weight: bold;&quot; 
+        view-class=&quot;view-box&quot; :native=&quot;false&quot;&gt;
+            &lt;el-tree
+                :data=&quot;zone&quot;
+                show-checkbox
+                node-key=&quot;id&quot;
+                :default-expanded-keys=&quot;[1]&quot;
+                :default-checked-keys=&quot;[5]&quot;
+                :props=&quot;defaultProps&quot;&gt;
+            &lt;/el-tree&gt;
+    &lt;/el-scrollbar&gt;
+&lt;/div&gt;
+
+
+.tree-area{
+    width: 80%;
+    height: 220px;
+    padding: 10px;
+}
+/deep/.list{
+    max-height: 220px;
+    width: 100%;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>数据：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>zone: [
+    {
+        id: 1,
+        label: '靠山县',
+        children: [
+            {
+                id: 2,
+                label: '香蕉镇'
+            },
+            {
+                id: 3,
+                label: '萝卜乡'
+            },
+            {
+                id: 4,
+                label: '苹果乡'
+            },
+            {
+                id: 5,
+                label: '荔枝乡'
+            },
+            {
+                id: 6,
+                label: '荷花镇'
+            },
+            {
+                id: 7,
+                label: '煎饼镇'
+            },
+            {
+                id: 8,
+                label: '哈密瓜乡'
+            },
+            {
+                id: 9,
+                label: '蓝莓镇'
+            },
+            {
+                id: 10,
+                label: '土豆乡'
+            },
+            {
+                id: 11,
+                label: '果冻镇'
+            }
+        ]
+    },
+    {
+        id: 12,
+        label: '吃山县',
+        children: [
+            {
+                id: 22,
+                label: '牛奶镇'
+            },
+            {
+                id: 23,
+                label: '山楂乡'
+            },
+            {
+                id: 24,
+                label: '葡萄乡'
+            },
+            {
+                id: 25,
+                label: '柚子乡'
+            },
+            {
+                id: 26,
+                label: '西瓜镇'
+            },
+            {
+                id: 27,
+                label: '番薯镇'
+            },
+            {
+                id: 28,
+                label: '蝗虫乡'
+            },
+            {
+                id: 29,
+                label: '辣椒镇'
+            },
+            {
+                id: 30,
+                label: '八角乡'
+            },
+            {
+                id: 31,
+                label: '野猪镇'
+            }
+        ]
+    }                
+],
+defaultProps: {
+    children: 'children',
+    label: 'label'
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br></div></div><h2 id="vue表格数据滚动加载"><a href="#vue表格数据滚动加载" class="header-anchor">#</a> Vue表格数据滚动加载</h2> <p><a href="https://www.npmjs.com/package/vue-infinite-scroll" target="_blank" rel="noopener noreferrer">vue-infinite-scroll<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="vue实现文件上传"><a href="#vue实现文件上传" class="header-anchor">#</a> Vue实现文件上传</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+    &lt;div class=&quot;upload-container&quot;&gt;
+        &lt;Upload
+            ref=&quot;upload&quot;
+            :before-upload=&quot;handleBeforeUpload&quot;
+            :on-success=&quot;handleSuccess&quot;
+            :format=&quot;['jpg', 'jpeg', 'png']&quot;
+            :max-size=&quot;4096&quot;
+            :data=&quot;{token: uptoken}&quot;
+            action=&quot;http://upload.qiniup.com&quot;&gt;
+            &lt;Button icon=&quot;ios-cloud-upload-outline&quot;&gt;Upload files&lt;/Button&gt;
+        &lt;/Upload&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import { getUploadToken } from '@/api/index';
+
+export default {
+  name: 'upload',
+  data() {
+    return {
+      uptoken: '',
+    };
+  },
+  methods: {
+    handleBeforeUpload(file) {
+      console.log((new Date()).valueOf() + '_' + file.name);
+    },
+    handleSuccess(res) {
+      console.log(res);
+    },
+  },
+  mounted() {
+    getUploadToken().then((res) =&gt; {
+      this.uptoken = res.data;
+      console.log(res.data);
+    });
+  },
+};
+&lt;/script&gt;
+&lt;style lang=&quot;less&quot; scoped&gt;
+    .upload-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+&lt;/style&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><p>后端</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function frontendToken() {
+  const mac = new qiniu.auth.digest.Mac(qiniuConfig.ak, qiniuConfig.sk);
+  const options  = { 
+    scope: qiniuConfig.bucket,
+    expires: 7200,
+  };
+  const putPolicy = new qiniu.rs.PutPolicy(options);
+  const uploadToken = putPolicy.uploadToken(mac);
+  return uploadToken;  
+}
+
+router.get('/token', async (ctx, next) =&gt; {
+    const token = frontendToken();
+    ctx.body = token;
+});
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p><a href="https://www.cnblogs.com/tomatoto/p/9594638.html" target="_blank" rel="noopener noreferrer">element文件上传<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.jianshu.com/p/c592c3009961" target="_blank" rel="noopener noreferrer">实现表单多文件上传<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://hayuq.com/blog/articles/189.shtml" target="_blank" rel="noopener noreferrer">iView + axios实现图片预览及单请求批量上传<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.xiaoxustudent.top/p/363" target="_blank" rel="noopener noreferrer">Vue + ElementUI如何优雅的上传文件到七牛OSS<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="computed和watch"><a href="#computed和watch" class="header-anchor">#</a> computed和watch</h2> <p><a href="https://www.cnblogs.com/jin-zhe/p/9319648.html" target="_blank" rel="noopener noreferrer">watch的简单应用<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.cnblogs.com/theblogs/p/10353771.html" target="_blank" rel="noopener noreferrer">computed和watch<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.cnblogs.com/gunelark/p/8492468.html" target="_blank" rel="noopener noreferrer">computed VS watch<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="混入mixins"><a href="#混入mixins" class="header-anchor">#</a> 混入mixins</h2> <p><a href="https://www.cnblogs.com/Ivy-s/p/9937173.html" target="_blank" rel="noopener noreferrer">vue中mixins的使用方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="子组件不要改变父组件的值"><a href="#子组件不要改变父组件的值" class="header-anchor">#</a> 子组件不要改变父组件的值</h2> <p><a href="https://www.jianshu.com/p/392145843afe" target="_blank" rel="noopener noreferrer">Vue报错<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.jianshu.com/p/54cfaa2f5d5b" target="_blank" rel="noopener noreferrer">Vue坑<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.cnblogs.com/xxcanghai/p/6124699.html?_t=t" target="_blank" rel="noopener noreferrer">Vue双向绑定<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <blockquote><p>Avoid mutating a prop directly since the value will be overwritten whenever the parent component re-</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>        &lt;div class=&quot;page-block&quot;&gt;
+            &lt;el-pagination
+                :current-page.sync =&quot;currentPaging&quot;
+                :page-sizes=&quot;[5, 10,30, 50, 100]&quot;
+                :page-size.sync =&quot;pageSizing&quot;
+                layout=&quot;total,prev, pager, next, jumper,sizes&quot;
+                :total=&quot;totalPage&quot;&gt;
+            &lt;/el-pagination&gt;                    
+        &lt;/div&gt;
+        &lt;div class=&quot;edit-block&quot;&gt;
+            &lt;el-button type=&quot;primary&quot; icon=&quot;el-icon-edit&quot; size=&quot;small&quot;&gt;添加&lt;/el-button&gt;
+            &lt;el-button type=&quot;danger&quot; icon=&quot;el-icon-delete&quot; size=&quot;small&quot;&gt;删除&lt;/el-button&gt;
+        &lt;/div&gt;        
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+    name: 'table-template',
+    props: {
+        searchTips: {
+            type: String,
+            required: true
+        },
+        totalPage: {
+            type: Number,
+            required: true
+        },
+        currentPage: {
+            type: Number,
+            required: true
+        },
+        pageSize: {
+            type: Number,
+            required: true
+        }
+    },
+    data() {
+        return {
+            searchName: '',
+            pageSizing: this.pageSize,
+            currentPaging: this.currentPage
+        }
+    },
+    watch: {
+        pageSize(val) {
+            this.pageSizing = val
+        },
+        pageSizing(val) {
+            this.$emit('change-size', val)
+        },
+        currentPage(val) {
+            this.currentPaging = val
+        },
+        currentPaging(val) {
+             this.$emit('current-change', val)
+        }
+    },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><h2 id="pagination的坑"><a href="#pagination的坑" class="header-anchor">#</a> pagination的坑</h2> <p><a href="https://www.jianshu.com/p/9f38983d8e1b" target="_blank" rel="noopener noreferrer">ElementUI-pagination<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="select下面套tree"><a href="#select下面套tree" class="header-anchor">#</a> Select下面套Tree</h2> <p><a href="https://blog.csdn.net/Mr_JavaScript/article/details/88604270" target="_blank" rel="noopener noreferrer">Element组件改造Select成树形选择器<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="小技巧"><a href="#小技巧" class="header-anchor">#</a> 小技巧</h2> <p>父组件改变子组件的data里面的值：在子组件添加ref属性，通过this.$refs.xxx.data来访问</p> <h2 id="iview文件上传"><a href="#iview文件上传" class="header-anchor">#</a> iView文件上传</h2> <p><a href="https://www.jianshu.com/p/a15c22909dd9" target="_blank" rel="noopener noreferrer">upload携带额外参数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="vue监听vuex中数据的变化"><a href="#vue监听vuex中数据的变化" class="header-anchor">#</a> Vue监听vuex中数据的变化</h2> <p><a href="https://blog.csdn.net/qq997843911/article/details/85055993" target="_blank" rel="noopener noreferrer">vuex state中的数组变化监听方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="vue中使用百度地图"><a href="#vue中使用百度地图" class="header-anchor">#</a> Vue中使用百度地图</h2> <p><a href="https://www.cnblogs.com/jiekzou/p/10485604.html" target="_blank" rel="noopener noreferrer">如何在Vue单页应用中使用百度地图<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.php.cn/js-tutorial-410639.html" target="_blank" rel="noopener noreferrer">在Vue中使用百度地图的两种方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="http://www.imooc.com/article/282058?block_id=tuijian_wz" target="_blank" rel="noopener noreferrer">Vue单页中使用百度地图<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="element-ui的坑"><a href="#element-ui的坑" class="header-anchor">#</a> element-ui的坑</h2> <p><a href="https://juejin.im/post/5bffda6c5188254caf186ebf" target="_blank" rel="noopener noreferrer">setCheckedKeys<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="iview-date组件"><a href="#iview-date组件" class="header-anchor">#</a> iView Date组件</h2> <p><strong>两个日期选择器联动，实现只选择起始日期开始后的一个月，并且不能选今天以后的日期</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+    &lt;div style=&quot;padding: 32px 500px&quot;&gt;
+        &lt;h1&gt;多个 DatePicker 联动的用法(联动禁用)&lt;/h1&gt;
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;DatePicker v-model=&quot;startDate&quot; @on-change=&quot;handleChange&quot;&gt;&lt;/DatePicker&gt;
+        &lt;DatePicker v-model=&quot;endDate&quot; :disabled=&quot;startDate === ''&quot; :options=&quot;options&quot; ref=&quot;endDate&quot;&gt;&lt;/DatePicker&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    export default {
+        data () {
+            const that = this
+            return {
+                startDate: '',
+                endDate: '',
+                options: {
+                    disabledDate: (date) =&gt; {
+                        const today = new Date();
+                        const last_time = (new Date(this.startDate)).getTime() + 86400000 * 30
+                        return  this.startDate &gt; date || last_time &lt; date || today &lt; date  ;
+                    }
+                }
+            }
+        },
+        methods: {
+            handleChange () {
+                if (this.startDate !== '') {
+                    this.$refs.endDate.handleFocus();
+                } else {
+                    this.endDate = '';
+                }
+            }
+        }
+    }
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p><strong>设置仅当月日期可选</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+    &lt;div style=&quot;padding: 32px 500px&quot;&gt;
+        &lt;h1&gt;DatePicker 设置仅当月日期可选&lt;/h1&gt;
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;DatePicker type=&quot;date&quot; :options=&quot;options&quot;&gt;&lt;/DatePicker&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    export default {
+        data () {
+            return {
+                options: {
+                    disabledDate (date) {
+                        // 先判断本月第一天
+                        const today = new Date();
+                        const year = today.getFullYear();
+                        const month = today.getMonth();
+
+                        const first_time = (new Date(year, month, 1)).getTime();
+
+                        // 再判断本月有多少天
+                        today.setMonth(month + 1);
+                        today.setDate('1');
+                        today.setDate(today.getDate() - 1);
+
+                        const days = today.getDate();
+
+                        // 再获取本月最后一天的时间
+                        const last_time = first_time + 86400000 * days;
+
+                        const datetime = date.valueOf();
+
+                        return datetime &lt; first_time || datetime &gt;= last_time;
+                    }
+                }
+            }
+        }
+    }
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><h2 id="iview按需引入"><a href="#iview按需引入" class="header-anchor">#</a> iView按需引入</h2> <p><a href="https://blog.csdn.net/WXY19951125/article/details/83022688" target="_blank" rel="noopener noreferrer">iView按需引入vue项目中<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <code>npm install babel-plugin-import --save-dev</code></p> <p><strong>.babelrc</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;plugins&quot;: [
+        [&quot;import&quot;, {
+        &quot;libraryName&quot;: &quot;iview&quot;,
+        &quot;libraryDirectory&quot;: &quot;src/components&quot;
+        }]
+    ]
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong>main.js</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// import iView from 'iview'
+import 'iview/dist/styles/iview.css'
+
+import { 
+  Button, 
+  Tabs,
+  TabPane,
+  Modal,
+  Upload,
+  Tooltip,
+  Icon,
+  Form,
+  FormItem,
+  Row,
+  Col,
+  Select,
+  Option,
+  DatePicker,
+  Card,
+  Message,
+  Table } from 'iview'
+
+
+Vue.component('Tabs', Tabs)
+Vue.component('TabPane', TabPane)
+Vue.component('Button', Button)
+Vue.component('Table', Table)
+Vue.component('Modal', Modal)
+Vue.component('Upload', Upload)
+Vue.component('Tooltip', Tooltip)
+Vue.component('Icon', Icon)
+Vue.component('Form', Form)
+Vue.component('FormItem', FormItem)
+Vue.component('Row', Row)
+Vue.component('Col', Col)
+Vue.component('Select', Select)
+Vue.component('Option', Option)
+Vue.component('DatePicker', DatePicker)
+Vue.component('Card', Card)
+Vue.prototype.$Message = Message
+// Vue.use(iView)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><p>按需引入时，全局api,比如this.$Message不能使用Vue.component的方式注册，引入之后应该使用Vue.prototype.xxx的方式</p> <h2 id="文件配置"><a href="#文件配置" class="header-anchor">#</a> 文件配置</h2> <p>devServe  设置内网访问，需要 host:0.0.0.0</p> <h2 id="路由章节"><a href="#路由章节" class="header-anchor">#</a> 路由章节</h2> <p>场景： Nav使用点击实践跳转到另一个页面，Header复用，并且页面都在同一个父组件下
+比如
+/home/card
+/home/business</p> <p>这时要高亮显示当前的Nav，注意路由配置中card和business是children路由，而不是/home/:path,此时 Header中的beforeRouteUpdate是不会触发的 理由如文档<a href="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB" target="_blank" rel="noopener noreferrer">beforeRouteUpdate<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+这种情况可以使用watch</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>watch: {
+    $route(to) {
+        this.currentName = to.name;
+    },
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="动态添加标签的轮子-基于iview"><a href="#动态添加标签的轮子-基于iview" class="header-anchor">#</a> 动态添加标签的轮子(基于iView)</h2> <p>点击添加标签后，原本的按钮变成输入框，输入完内容或者失焦的时候会添加新的标签，然后增加新的按钮。但是如果内容没输入完，输入框会替换成原来的按钮。</p> <ul><li>1个属性2个事件绑定
+<ul><li>通过<code>:tag-list=&quot;tagList&quot;</code> 传递初始化的标签，类型为数组</li> <li><code>@on-close</code> 传递要删除的index，删除父组件中对应的标签</li> <li><code>@on-add</code> 传递新插入的标签value, 想父组件中插入新的标签
+<img src="http://qiniu.hackslog.cn/blog/20190809/E15eYgE99PNB.gif" alt="mark"></li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+    &lt;div class=&quot;dynamic-tag&quot;&gt;
+      &lt;Tag
+        v-for=&quot;item in tagContent&quot;
+        :key=&quot;item&quot;
+        :name=&quot;item&quot;
+        closable @on-close=&quot;handleClose&quot;&gt;{{ item }}&lt;/Tag&gt;
+      &lt;Input
+        ref=&quot;input&quot;
+        v-if=&quot;inputVisible&quot;
+        v-model=&quot;inputValue&quot;
+        @on-blur=&quot;handleInputComplete&quot;
+        @on-enter=&quot;handleInputComplete&quot;
+        style=&quot;width: 60px;&quot; /&gt;
+      &lt;Button
+        v-else
+        icon=&quot;ios-add&quot;
+        type=&quot;dashed&quot;
+        size=&quot;small&quot;
+        @click=&quot;showInput&quot;&gt;添加&lt;/Button&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+  props: {
+    TagList: {
+      type: Array,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      tagContent: this.TagList,
+      inputValue: '',
+      inputVisible: false,
+    };
+  },
+  methods: {
+    showInput() {
+      this.inputVisible = true;
+      this.$nextTick(() =&gt; {
+        this.$refs.input.focus();
+      });
+    },
+    handleClose(event, name) {
+      const index = this.tagContent.indexOf(name);
+      this.$emit('on-close', index);      
+    },
+    handleInputComplete() {
+      const value = this.inputValue;
+      if (value) {
+        this.$emit('on-add', value);        
+      }
+      this.inputVisible = false;
+      this.inputValue = '';
+    },
+  },
+};
+&lt;/script&gt;
+&lt;style lang=&quot;less&quot;&gt;
+  .dynamic-tag{
+    width: 100%;
+    height: 100%;
+    .ivu-input{
+      height: 24px;
+    }
+  }
+&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br></div></div><h2 id="使用过渡动画"><a href="#使用过渡动画" class="header-anchor">#</a> 使用过渡动画</h2> <p><a href="https://cn.vuejs.org/v2/guide/transitions.html" target="_blank" rel="noopener noreferrer">transition<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener noreferrer">Animate.css<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i animate.css -S
+// main.js中引入
+import animated from 'animate.css'
+Vue.use(animated)
+
+&lt;transition 
+    enter-active-class=&quot;animated zoonInLeft&quot; 
+    leave-active-class=&quot;animated zoomOutLeft&quot;&gt;
+    &lt;div class=&quot;aaa&quot; v-show=&quot;show&quot;&gt;&lt;/div&gt;
+&lt;/transition&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="上传图片之前检查图片的宽高"><a href="#上传图片之前检查图片的宽高" class="header-anchor">#</a> 上传图片之前检查图片的宽高</h2> <p><a href="https://www.jianshu.com/p/c91915541899" target="_blank" rel="noopener noreferrer">iview upload上传图片前使用Promise判断高宽<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="微信扫码登录"><a href="#微信扫码登录" class="header-anchor">#</a> 微信扫码登录</h2> <p>获取access_token的过程</p> <ol><li>点击微信登录链接，会打开一个微信扫码的页面(微信开放平台提供的，地址携带了第三方网站的appID和重定向地址)</li> <li>用户扫码，微信弹出确认登录按钮，确认以后微信开放平台返回一个临时的code跳转到之前的&quot;重定向地址&quot;，这次跳转会带上临时的code</li> <li>这个跳转交给了第三方网站处理，相当于一次Get请求。网站会通过code + appid + appsecret(这个放在服务器)，生成了一个access_token</li> <li>第三方网站返回了access_token，一般也会携带用户信息(通过官方提供的userinfo api实现)，然后就能看过个性化的页面(比如有你的头像)，实现了登录
+这个过程可以联想一下银行排队叫号，他们给了你临时Code，用了一次后会过期，叫到了你不办理业务也会过期。
+access_token相当于给你通过了认证，可以实现免密支付啦。</li></ol> <p><a href="https://blog.csdn.net/sinat_22014829/article/details/73087651" target="_blank" rel="noopener noreferrer">有关Vue使用微信扫码登录的一点小总结<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=open1419316505&amp;token=58cc123fad27e306bfedc323d4cb9c5a32020b77&amp;lang=zh_CN" target="_blank" rel="noopener noreferrer">开放平台-应用开发指南<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=open1419316518&amp;token=58cc123fad27e306bfedc323d4cb9c5a32020b77&amp;lang=zh_CN" target="_blank" rel="noopener noreferrer">开放平台-授权后接口回调<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.cnblogs.com/lyzg/p/6159617.html" target="_blank" rel="noopener noreferrer">设置多个微信授权回调页面域名<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://github.com/lionskys/codetoany" target="_blank" rel="noopener noreferrer">突破微信公众平台一个公众号最多设置2个网页授权回调域名的限制<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="http://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&amp;t=sandbox/index" target="_blank" rel="noopener noreferrer">公众测试账号获取<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.cnblogs.com/0201zcr/p/5131602.html" target="_blank" rel="noopener noreferrer">微信公众平台开发————微信授权登录<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>   { errcode: 40001,
+     errmsg:
+      'invalid credential, access_token is invalid or not latest hint: [4IkU_a00893943!]' 
+    } 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ol><li>检查是不是重复获取了token</li> <li>检查接口类型，公众平台和开放平台的用户请求地址是不同的</li></ol> <h2 id="v-if取消复用"><a href="#v-if取消复用" class="header-anchor">#</a> v-if取消复用</h2> <p>在不需要复用的节点下面添加key值, 这样每次切换到原来的组件，组件会重新渲染一遍。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    &lt;div v-if=&quot;getCurrentStep === 0&quot; class=&quot;create-detail&quot;&gt;
+        &lt;basic-info key=&quot;info&quot;&gt;&lt;/basic-info&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;create-detail&quot; v-if=&quot;getCurrentStep === 1&quot;&gt;
+        &lt;car-detail key=&quot;detail-image&quot;&gt;&lt;/car-detail&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;create-detail&quot; v-if=&quot;getCurrentStep === 2&quot;&gt;
+        &lt;basic-setting key=&quot;basic-setting&quot;&gt;&lt;/basic-setting&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;create-detail&quot; v-if=&quot;getCurrentStep === 3&quot;&gt;
+        &lt;more-setting key=&quot;more-setting&quot;&gt;&lt;/more-setting&gt;
+    &lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">7/18/2020, 2:14:15 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.630832b4.js" defer></script><script src="/assets/js/2.fd641dc6.js" defer></script><script src="/assets/js/76.deb4abfd.js" defer></script>
+  </body>
+</html>

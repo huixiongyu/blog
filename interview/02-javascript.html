@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | 灰熊の博客</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/flower.ico">
+    <meta name="description" content="灰熊的博客">
+    <link rel="preload" href="/assets/css/0.styles.1fbdf1a8.css" as="style"><link rel="preload" href="/assets/js/app.630832b4.js" as="script"><link rel="preload" href="/assets/js/2.fd641dc6.js" as="script"><link rel="preload" href="/assets/js/57.50d4bfed.js" as="script"><link rel="prefetch" href="/assets/js/10.555b9a4f.js"><link rel="prefetch" href="/assets/js/11.d876e17d.js"><link rel="prefetch" href="/assets/js/12.06654427.js"><link rel="prefetch" href="/assets/js/13.dead94b7.js"><link rel="prefetch" href="/assets/js/14.fd142a2b.js"><link rel="prefetch" href="/assets/js/15.1641a19a.js"><link rel="prefetch" href="/assets/js/16.cecbd52e.js"><link rel="prefetch" href="/assets/js/17.5f5202e3.js"><link rel="prefetch" href="/assets/js/18.8838bcd0.js"><link rel="prefetch" href="/assets/js/19.1665e9b8.js"><link rel="prefetch" href="/assets/js/20.a916deb3.js"><link rel="prefetch" href="/assets/js/21.cc37dd12.js"><link rel="prefetch" href="/assets/js/22.da70b1e1.js"><link rel="prefetch" href="/assets/js/23.8f90269a.js"><link rel="prefetch" href="/assets/js/24.dcd27d59.js"><link rel="prefetch" href="/assets/js/25.ee4595fa.js"><link rel="prefetch" href="/assets/js/26.228efc54.js"><link rel="prefetch" href="/assets/js/27.67831758.js"><link rel="prefetch" href="/assets/js/28.255b49a3.js"><link rel="prefetch" href="/assets/js/29.e7508688.js"><link rel="prefetch" href="/assets/js/3.1676bef1.js"><link rel="prefetch" href="/assets/js/30.243464b7.js"><link rel="prefetch" href="/assets/js/31.b343377c.js"><link rel="prefetch" href="/assets/js/32.d34423ae.js"><link rel="prefetch" href="/assets/js/33.f2f77fa3.js"><link rel="prefetch" href="/assets/js/34.9486bf92.js"><link rel="prefetch" href="/assets/js/35.0a642c00.js"><link rel="prefetch" href="/assets/js/36.54b64957.js"><link rel="prefetch" href="/assets/js/37.1c7e9bb3.js"><link rel="prefetch" href="/assets/js/38.6ff117d0.js"><link rel="prefetch" href="/assets/js/39.3928819c.js"><link rel="prefetch" href="/assets/js/4.4a758a06.js"><link rel="prefetch" href="/assets/js/40.6c6ab3c9.js"><link rel="prefetch" href="/assets/js/41.7f992109.js"><link rel="prefetch" href="/assets/js/42.59e6775b.js"><link rel="prefetch" href="/assets/js/43.37b822e7.js"><link rel="prefetch" href="/assets/js/44.00b4527e.js"><link rel="prefetch" href="/assets/js/45.28eebd0b.js"><link rel="prefetch" href="/assets/js/46.caeb5f4d.js"><link rel="prefetch" href="/assets/js/47.169cdf33.js"><link rel="prefetch" href="/assets/js/48.b11209dc.js"><link rel="prefetch" href="/assets/js/49.cc25f2ed.js"><link rel="prefetch" href="/assets/js/5.a09c78bd.js"><link rel="prefetch" href="/assets/js/50.54b7efd5.js"><link rel="prefetch" href="/assets/js/51.a78f7722.js"><link rel="prefetch" href="/assets/js/52.0c9e43ed.js"><link rel="prefetch" href="/assets/js/53.cb5ed84a.js"><link rel="prefetch" href="/assets/js/54.5a7b2c3d.js"><link rel="prefetch" href="/assets/js/55.92870b89.js"><link rel="prefetch" href="/assets/js/56.1dcb3427.js"><link rel="prefetch" href="/assets/js/58.3248bd6b.js"><link rel="prefetch" href="/assets/js/59.40d75053.js"><link rel="prefetch" href="/assets/js/6.b43f1f23.js"><link rel="prefetch" href="/assets/js/60.b82c2b81.js"><link rel="prefetch" href="/assets/js/61.8d7f2e0b.js"><link rel="prefetch" href="/assets/js/62.ee66d620.js"><link rel="prefetch" href="/assets/js/63.99b06067.js"><link rel="prefetch" href="/assets/js/64.ff38dbdb.js"><link rel="prefetch" href="/assets/js/65.f5382d15.js"><link rel="prefetch" href="/assets/js/66.f5b3c1a5.js"><link rel="prefetch" href="/assets/js/67.3ab91632.js"><link rel="prefetch" href="/assets/js/68.b260c51e.js"><link rel="prefetch" href="/assets/js/69.a73bf592.js"><link rel="prefetch" href="/assets/js/7.3f6cbb18.js"><link rel="prefetch" href="/assets/js/70.81e50cce.js"><link rel="prefetch" href="/assets/js/71.8854e20d.js"><link rel="prefetch" href="/assets/js/72.5af433a4.js"><link rel="prefetch" href="/assets/js/73.02dc7323.js"><link rel="prefetch" href="/assets/js/74.2eee7b5f.js"><link rel="prefetch" href="/assets/js/75.73b1f511.js"><link rel="prefetch" href="/assets/js/76.deb4abfd.js"><link rel="prefetch" href="/assets/js/77.24604f2b.js"><link rel="prefetch" href="/assets/js/78.22359c20.js"><link rel="prefetch" href="/assets/js/79.5a53d779.js"><link rel="prefetch" href="/assets/js/8.76f5c329.js"><link rel="prefetch" href="/assets/js/80.077a9414.js"><link rel="prefetch" href="/assets/js/81.d99d4088.js"><link rel="prefetch" href="/assets/js/9.aed19548.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fbdf1a8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">灰熊の博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link router-link-active">
+  面试题
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/huixiongyu/huixiongyu.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link router-link-active">
+  面试题
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/huixiongyu/huixiongyu.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/interview/" aria-current="page" class="sidebar-link">面试</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/#批量复习" class="sidebar-link">批量复习</a></li><li class="sidebar-sub-header"><a href="/interview/#还没看的" class="sidebar-link">还没看的</a></li><li class="sidebar-sub-header"><a href="/interview/#待阅列表" class="sidebar-link">待阅列表</a></li><li class="sidebar-sub-header"><a href="/interview/#值得尝试" class="sidebar-link">值得尝试</a></li><li class="sidebar-sub-header"><a href="/interview/#有时间再看看" class="sidebar-link">有时间再看看</a></li><li class="sidebar-sub-header"><a href="/interview/#深入学习" class="sidebar-link">深入学习</a></li><li class="sidebar-sub-header"><a href="/interview/#代码" class="sidebar-link">代码</a></li></ul></li><li><a href="/interview/00-experiences.html" class="sidebar-link">面试经历</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/00-experiences.html#微软外包" class="sidebar-link">微软外包</a></li></ul></li><li><a href="/interview/01-html-css.html" class="sidebar-link">HTML+CSS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_1-选择器和选择器优先级" class="sidebar-link">1.选择器和选择器优先级</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_2-盒模型" class="sidebar-link">2.盒模型</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_3-清除浮动" class="sidebar-link">3.清除浮动</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_4-常见布局" class="sidebar-link">4.常见布局</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_5-定位position" class="sidebar-link">5.定位position</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_6-实现居中" class="sidebar-link">6.实现居中</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_7-垂直居中" class="sidebar-link">7.垂直居中</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_8-css3动画" class="sidebar-link">8.CSS3动画</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_9-flex布局" class="sidebar-link">9.Flex布局</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_10-隐藏一个元素的方法" class="sidebar-link">10.隐藏一个元素的方法</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_11-在html中如何做seo" class="sidebar-link">11.在HTML中如何做SEO</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_12-什么是bfc" class="sidebar-link">12.什么是BFC</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_13-css-中-inline-元素可以设置-padding-和-margin-吗？" class="sidebar-link">13.CSS 中 inline 元素可以设置 padding 和 margin 吗？</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_14-em、rem和px" class="sidebar-link">14.em、rem和px</a></li><li class="sidebar-sub-header"><a href="/interview/01-html-css.html#_15-高度自适应" class="sidebar-link">15.高度自适应</a></li></ul></li><li><a href="/interview/02-javascript.html" aria-current="page" class="active sidebar-link">JavaScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_0-小知识点" class="sidebar-link">0.小知识点</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_1-原型和原型链" class="sidebar-link">1.原型和原型链</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_2-fetch和ajax的区别" class="sidebar-link">2.fetch和Ajax的区别</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_3-作用域和闭包" class="sidebar-link">3.作用域和闭包</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_4-宏任务和微任务" class="sidebar-link">4.宏任务和微任务</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_5-this" class="sidebar-link">5.this</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_6-深拷贝" class="sidebar-link">6.深拷贝</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_7-new怎么写" class="sidebar-link">7.new怎么写</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_8-typeof与instanceof的区别是什么？" class="sidebar-link">8.typeof与instanceof的区别是什么？</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_9-什么是冒泡和捕获" class="sidebar-link">9.什么是冒泡和捕获</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_10-ajax创建过程" class="sidebar-link">10.Ajax创建过程</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_11-对es6的了解" class="sidebar-link">11.对ES6的了解</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_12-promise" class="sidebar-link">12.Promise</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_13-函数节流与函数防抖" class="sidebar-link">13.函数节流与函数防抖</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_14-变量提升" class="sidebar-link">14.变量提升</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_15-作用域" class="sidebar-link">15.作用域</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_16-闭包" class="sidebar-link">16.闭包</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_17-关于offsetleft、scrolltop、clienttop" class="sidebar-link">17.关于offsetLeft、scrollTop、clientTop</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_18-commonjs和es6-module的区别" class="sidebar-link">18.CommonJS和ES6 Module的区别</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_19-创建对象的几种方式" class="sidebar-link">19.创建对象的几种方式</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_20-javascript实现继承方式" class="sidebar-link">20.JavaScript实现继承方式</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_21-使用javascript实现简单的拖拽" class="sidebar-link">21.使用JavaScript实现简单的拖拽</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_22-柯里化" class="sidebar-link">22.柯里化</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_23-箭头函数" class="sidebar-link">23.箭头函数</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_24-如何避免javascript内存泄漏" class="sidebar-link">24.如何避免JavaScript内存泄漏</a></li><li class="sidebar-sub-header"><a href="/interview/02-javascript.html#_25-常用的数组方法有哪些？" class="sidebar-link">25.常用的数组方法有哪些？</a></li></ul></li><li><a href="/interview/03-vue.html" class="sidebar-link">Vue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_1-如何理解mvvm" class="sidebar-link">1.如何理解MVVM</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_2-vue的生命周期" class="sidebar-link">2.Vue的生命周期</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_3-如何实现数据双向绑定？" class="sidebar-link">3.如何实现数据双向绑定？</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_4-路由的钩子函数" class="sidebar-link">4.路由的钩子函数</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_5-什么情况下使用computed、methods和watch" class="sidebar-link">5.什么情况下使用computed、methods和watch?</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_6-怎么理解虚拟dom和template？" class="sidebar-link">6.怎么理解虚拟DOM和template？</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_7-如何自定义指令" class="sidebar-link">7.如何自定义指令</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_8-什么是虚拟dom" class="sidebar-link">8.什么是虚拟DOM</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_9-vue自定义一个过滤器" class="sidebar-link">9.Vue自定义一个过滤器</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_10-vuex" class="sidebar-link">10.Vuex</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_11-vue-mixin-的使用" class="sidebar-link">11.Vue mixin 的使用</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_20-vue项目打包优化" class="sidebar-link">20.Vue项目打包优化</a></li><li class="sidebar-sub-header"><a href="/interview/03-vue.html#_100-nuxt-js的工作过程" class="sidebar-link">100.Nuxt.js的工作过程</a></li></ul></li><li><a href="/interview/04-React.html" class="sidebar-link">React</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/04-React.html#_1-react的生命周期函数" class="sidebar-link">1.React的生命周期函数</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_2-纯函数" class="sidebar-link">2.纯函数</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_3-高阶组件" class="sidebar-link">3.高阶组件</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_4-如何解决-props-层级过深的问题" class="sidebar-link">4.如何解决 props 层级过深的问题</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_5-redux-中异步的请求怎么处理" class="sidebar-link">5.Redux 中异步的请求怎么处理</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_6-dom-结构发生变化后内部经历了哪些变化" class="sidebar-link">6.DOM 结构发生变化后内部经历了哪些变化</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_7-react-router-里的-link-和-html-中的-a-有什么区别" class="sidebar-link">7.react-router 里的 \ 有什么区别</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_8-react-router-怎么实现路由切换" class="sidebar-link">8.react-router 怎么实现路由切换</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_9-react-怎么做数据变化的检查，如何更新视图" class="sidebar-link">9.React 怎么做数据变化的检查，如何更新视图</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_10-使用过的-redux-中间件" class="sidebar-link">10.使用过的 Redux 中间件</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_11-多个组件之间如何拆分各自的state，每块小的组件有自己的状态，它们之间还有一些公共的状态需要维护，如何设计" class="sidebar-link">11.多个组件之间如何拆分各自的state，每块小的组件有自己的状态，它们之间还有一些公共的状态需要维护，如何设计</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_12-redux-如何实现多个组件之间的通信，多个组建使用相同状态如何进行管理" class="sidebar-link">12.Redux 如何实现多个组件之间的通信，多个组建使用相同状态如何进行管理</a></li><li class="sidebar-sub-header"><a href="/interview/04-React.html#_13-介绍-redux主要解决什么问题-数据流的流程" class="sidebar-link">13.介绍 Redux主要解决什么问题,数据流的流程</a></li></ul></li><li><a href="/interview/05-min-program.html" class="sidebar-link">小程序</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_1-小程序的生命周期" class="sidebar-link">1.小程序的生命周期</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_2-小程序文件类型和用途" class="sidebar-link">2.小程序文件类型和用途</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_3-小程序的事件" class="sidebar-link">3.小程序的事件</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_4-小程序路由" class="sidebar-link">4.小程序路由</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_5-数据请求" class="sidebar-link">5.数据请求</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_6-小程序的wxss和css有哪些不一样的地方：" class="sidebar-link">6.小程序的wxss和css有哪些不一样的地方：</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_7-如何提高微信小程序的相应速度" class="sidebar-link">7.如何提高微信小程序的相应速度</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_8-说说常用的一些api" class="sidebar-link">8.说说常用的一些API</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_9-小程序登录流程" class="sidebar-link">9.小程序登录流程</a></li><li class="sidebar-sub-header"><a href="/interview/05-min-program.html#_10-自定义组件" class="sidebar-link">10.自定义组件</a></li></ul></li><li><a href="/interview/06-jquery.html" class="sidebar-link">jQuery</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_0-小知识点" class="sidebar-link">0.小知识点</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_1-jquery的扩展方式" class="sidebar-link">1.jQuery的扩展方式</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_2-事件委托" class="sidebar-link">2.事件委托</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_3-jquery中的detach-和remove-方法的区别是什么？" class="sidebar-link">3.jQuery中的detach()和remove()方法的区别是什么？</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_4-jquery中使用ajax" class="sidebar-link">4.jQuery中使用Ajax</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_5-jquery的插入方法" class="sidebar-link">5.jQuery的插入方法</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_6-jquery中的事件监听" class="sidebar-link">6.jQuery中的事件监听</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_7-jquery文档处理有哪些？" class="sidebar-link">7.jQuery文档处理有哪些？</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_8-jquery中的onload，ready方法怎么用，区别是什么？" class="sidebar-link">8.jQuery中的onload，ready方法怎么用，区别是什么？</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_9-animate-方法怎么用？" class="sidebar-link">9.animate()方法怎么用？</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_10-dom和jquery对象的相互转化" class="sidebar-link">10.DOM和jQuery对象的相互转化</a></li><li class="sidebar-sub-header"><a href="/interview/06-jquery.html#_11-jquery中的deferred和promise" class="sidebar-link">11.jQuery中的Deferred和promise</a></li></ul></li><li><a href="/interview/07-about-frontend.html" class="sidebar-link">前端相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_1-状态码" class="sidebar-link">1.状态码</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_2-输入网址到页面选择的整个过程" class="sidebar-link">2.输入网址到页面选择的整个过程</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_3-性能优化" class="sidebar-link">3.性能优化</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_4-web安全" class="sidebar-link">4.Web安全</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_5-前端模块化" class="sidebar-link">5.前端模块化</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_6-tcp传输的三次握手、四次挥手" class="sidebar-link">6.TCP传输的三次握手、四次挥手</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_7-重排和重绘" class="sidebar-link">7.重排和重绘</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_8-描述cookie、sessionstorage和localstorage的区别" class="sidebar-link">8.描述cookie、sessionStorage和localStorage的区别</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_9-浏览器渲染原理" class="sidebar-link">9.浏览器渲染原理</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_10-websocket和ajax的区别" class="sidebar-link">10.websocket和ajax的区别</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_11-跨域" class="sidebar-link">11.跨域</a></li><li class="sidebar-sub-header"><a href="/interview/07-about-frontend.html#_12-http请求头和响应头" class="sidebar-link">12.HTTP请求头和响应头</a></li></ul></li><li><a href="/interview/08-mobile.html" class="sidebar-link">移动开发</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/08-mobile.html#_1-在移动端，单击穿透是什么？" class="sidebar-link">1.在移动端，单击穿透是什么？</a></li></ul></li><li><a href="/interview/08-webpack.html" class="sidebar-link">Webpack</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_1-介绍webpack" class="sidebar-link">1.介绍webpack</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_2-webpack的插件如何实现？" class="sidebar-link">2.webpack的插件如何实现？</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_3-dev-server怎么跑起来的？" class="sidebar-link">3.dev-server怎么跑起来的？</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_4-import-button-from-antd-，打包时只打包-button，分模块加载，是如何实现的" class="sidebar-link">4.import { Button } from 'antd'，打包时只打包 button，分模块加载，是如何实现的</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_5-使用-import-时，webpack-对-node-modules-里的依赖会做什么" class="sidebar-link">5.使用 import 时，webpack 对 node_modules 里的依赖会做什么</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_6-webpack的生命周期和打包过程" class="sidebar-link">6.webpack的生命周期和打包过程</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_7-loader-和-plugin-有什么区别" class="sidebar-link">7.loader 和 plugin 有什么区别</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_8-配css需要哪些-loader" class="sidebar-link">8.配CSS需要哪些 loader</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_9-如何配置把js、css、html单独打包" class="sidebar-link">9.如何配置把JS、CSS、HTML单独打包</a></li><li class="sidebar-sub-header"><a href="/interview/08-webpack.html#_10-打包时-hash-是如何生成的" class="sidebar-link">10.打包时 hash 是如何生成的</a></li></ul></li><li><a href="/interview/09-network-principle.html" class="sidebar-link">网络原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/09-network-principle.html#_1-七层模型和五层模型" class="sidebar-link">1.七层模型和五层模型</a></li><li class="sidebar-sub-header"><a href="/interview/09-network-principle.html#tcp-的重传机制？" class="sidebar-link">TCP 的重传机制？</a></li></ul></li><li><a href="/interview/10-code.html" class="sidebar-link">手撕代码</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/10-code.html#_1-判断一个字符串出现最多的字符" class="sidebar-link">1.判断一个字符串出现最多的字符</a></li><li class="sidebar-sub-header"><a href="/interview/10-code.html#_2-解析url，将-号分割为对象的形式" class="sidebar-link">2.解析URL，将=号分割为对象的形式</a></li><li class="sidebar-sub-header"><a href="/interview/10-code.html#_3-多维数组转化为一维数组" class="sidebar-link">3.多维数组转化为一维数组</a></li><li class="sidebar-sub-header"><a href="/interview/10-code.html#_4-jquery-实现复选框的全选和反选效果" class="sidebar-link">4.jQuery 实现复选框的全选和反选效果</a></li><li class="sidebar-sub-header"><a href="/interview/10-code.html#_5-实现数组去重" class="sidebar-link">5.实现数组去重</a></li><li class="sidebar-sub-header"><a href="/interview/10-code.html#斐波那契数列" class="sidebar-link">斐波那契数列</a></li></ul></li><li><a href="/interview/11-algorithm.html" class="sidebar-link">数据结构</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/11-algorithm.html#_1-快速排序" class="sidebar-link">1.快速排序</a></li><li class="sidebar-sub-header"><a href="/interview/11-algorithm.html#_2-编写一个从小到大的冒泡排序算法" class="sidebar-link">2.编写一个从小到大的冒泡排序算法</a></li><li class="sidebar-sub-header"><a href="/interview/11-algorithm.html#" class="sidebar-link"></a></li></ul></li><li><a href="/interview/12-other.html" class="sidebar-link">其他</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/12-other.html#_1-git的常用命令" class="sidebar-link">1.Git的常用命令</a></li><li class="sidebar-sub-header"><a href="/interview/12-other.html#_2-linux基本命令" class="sidebar-link">2.Linux基本命令</a></li><li class="sidebar-sub-header"><a href="/interview/12-other.html#_3-进程和线程的区别" class="sidebar-link">3.进程和线程的区别</a></li></ul></li><li><a href="/interview/99-personal.html" class="sidebar-link">主观问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_1-你选择工作看重的三个方面是什么？" class="sidebar-link">1.你选择工作看重的三个方面是什么？</a></li><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_2-你还有什么要问我的吗？" class="sidebar-link">2.你还有什么要问我的吗？</a></li><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_3-为什么离开上一家公司？" class="sidebar-link">3.为什么离开上一家公司？</a></li><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_4-你对自己的评价是什么？" class="sidebar-link">4.你对自己的评价是什么？</a></li><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_5-你还有什么兴趣爱好？" class="sidebar-link">5.你还有什么兴趣爱好？</a></li><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_6-你在上一家公司遇到印象深刻的问题是什么？是怎么解决的？" class="sidebar-link">6.你在上一家公司遇到印象深刻的问题是什么？是怎么解决的？</a></li><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_7-你封装过什么组件吗？" class="sidebar-link">7.你封装过什么组件吗？</a></li><li class="sidebar-sub-header"><a href="/interview/99-personal.html#_8-你想要找的公司属性是什么？" class="sidebar-link">8. 你想要找的公司属性是什么？</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript"><a href="#javascript" class="header-anchor">#</a> JavaScript</h1> <h2 id="_0-小知识点"><a href="#_0-小知识点" class="header-anchor">#</a> 0.小知识点</h2> <ul><li>JavaScript是基于对象的、事件驱动的脚本程序设计语言。</li> <li>substr方法截取字符串，参数一开始位置，参数二截取长度</li> <li>indexOf(string) 可以查找某字符串是否包含字符串，方便截取.没有返回-1</li> <li>\s 元字符用于查找空白字符</li> <li>typeof返回的数据类型：<strong>undefined、boolean、string、number、object、function</strong></li> <li>typeof(null)  结果是object</li> <li>charAt()可以获取字符串对应位置的字符</li> <li>有var声明的是局部变量（方法内有效），没var声明的是全局变量（页面内有效）。</li> <li>console.log(MATH.PI++)仍然是3.141592653589793，系统对象的属性是只读的。</li> <li>split()作用是分割字符串，没有参数每个字符之间都分割，有参数则按该字符分割字符串，然后返回数组。作用跟join相反</li> <li>undefined实际是从null派生出来的，undefined是声明了变量未赋值，null是找不到对象。</li> <li>false被当做数值运算是，值为0，那么false==0   值为true</li> <li>innerHTML是DOM元素的对象属性，用于设置内容；document.write</li> <li>消息提醒：alert弹出警告框，confirm弹出确认框，prompt弹出输入框</li> <li>window.location.reload()方法是用来刷新当前整个页面的。location.replace使用后不能使用history跳转页面</li> <li>节点操作的常用语句：appendChild添加节点，removeChild移除节点，cloneNode复制节点，createElement创建元素，createTextNode创建文本节点，createAttibute创建指定名字的Attr节点。查找节点：getElementById、getElementsByTagName、getElementsByName</li> <li>Math.random()  取0~1的随机数，Math.floor(num)取整数部分，Math.round(num)  取四舍五入，Math.ceil(num)向上取整</li> <li>for/in是循环遍历对象的属性</li> <li>判断对象是数组的常用方法：  a.constructor == Array</li> <li>数组在第n个地方插入元素用splice,参数是(位置，删除数量，插入的元素)</li> <li>typeof用于判断数据类型，instanceof用于判断一个变量是否为某个对象的实例。</li> <li>unshift()向数组开头插入元素，并返回长度。shift()删除数组第一个元素，并返回它的值.push（）末尾插入元素，返回数组的长度。</li> <li>slice() 字符串的字符添加、删除、替换，跟splice（对象是数组）相似</li> <li>当判断对象属性存在时，hasOwnProperty是唯一可以依赖的方法，使用for in loop来遍历对象时，使用hasOwnProperty将会很好地避免来自原型对象扩展带来的困扰。</li> <li>0.1+0.2 == 0.3  答案是false  ,进制数运算导致的。</li> <li>判断是否是数组：  arr instance of Array  或者arr._<em>proto</em>_.constructor ==Array</li> <li>DOM操作：appendChild添加，removeChild移除,replaceChild，clone复制，createElement创建,getElementById、getElementsByTagName查找，</li> <li>阻止冒泡e.stopPropagation(IEcancleBubble),取消默认行为：event.preventDefault()</li> <li>如何判断图片加载完成：readystatechange事件判断readState是loaded或complete</li> <li>Ajax的全称：<strong>Asynchronous JavaScript and XML</strong> 异步的JavaScript和XML</li></ul> <h2 id="_1-原型和原型链"><a href="#_1-原型和原型链" class="header-anchor">#</a> 1.原型和原型链</h2> <p>可以用套娃去理解...</p> <p>JavaScript中的每个对象都有一个prototype属性，称为原型，而<strong>原型的值</strong>也是一个对象，因此它也有自己的原型，这样就串联一条原型链。原型链的链头是object，它的prototype比较特殊，值为null.</p> <p>在JavaScript中，原型也是一个对象，用原型可以实现对象的属性继承，JavaScript的对象中都包含了一个“prototype&quot;内部属性，这个属性所对应的就是该对象的原型。</p> <ul><li>所有的引用类型（数组、对象、函数）都具有对象特征，可以自由扩展属性（null除外）</li> <li>所有的引用类型（数组、对象、函数）都有一个__proto__属性，属性值是一个普通的对象。</li> <li>所有的函数都有一个prototype属性，属性值也是一个普通的对象</li> <li>对于所有的引用类型（数组、对象、函数），__proto__属性值指向它的构造函数的“prototype”属性值。</li> <li>当试图得到一个对象的某个属性时，如果对象本身没有这个属性，那么会从它的_<em>proto</em>_（构造函数的prototype）中寻找</li></ul> <p><img src="http://qiniu.hackslog.cn/blog/20190523/iXa6MfnTJrcb.png?imageslim" alt="mark"></p> <ul><li>任何对象都有一个 <code>__proto__</code> 属性。</li> <li>任何方法都有一个 <code>prototype</code> 属性。</li></ul> <p><code>__proto__</code>指向 new 出来的构造函数的原型<code>prototype</code>。</p> <p><code>prototype</code> 是一个对象，当函数被定义的时候默认被创建的。</p> <p>需要注意的是：</p> <ul><li><code>prototype</code> 也是一个对象 ，所以其中也有一个<code>__proto__</code>属性，指向对象的原型 <code>Object.protytype</code>。</li> <li><code>Object</code> 本身是构造函数，继承了 Function.prototype。<code>Object.__proto__ === Function.prototype</code></li> <li><code>Function</code> 本身就是函数，继承了 Function.prototype。<code>Function.__proto__ === Function.prototype</code></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function A() {}
+
+var a = new A();
+
+console.log(a.__proto__ === A.prototype);
+
+console.log(A.prototype.__proto__ === Object.prototype);
+
+console.log(Object.prototype.__proto__ === null);
+
+console.log(a.__proto__.__proto__.__proto__ === null);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>任何一个对象都有一个<code>__proto__</code>属性，指向构造函数的原型 prototype，而 prototype 也是一个对象，也有一个<code>__proto__</code>属性，这样一环接一环，就形成了一个链，到最后 Object.protytype 截止。</p> <ul><li>函数对象有 <code>__proto__</code> 和 prototype 属性。</li> <li>非函数对象只有 <code>__proto__</code> 属性。</li> <li>prototype 中有 <code>__proto__</code> 属性。且是 Object 构造函数创建的。</li> <li>函数对象 <code>__proto__</code> 指向它的创建者及 Function 构造函数。</li> <li>Function 构造函数 <code>__proto__</code> 指向它自己。</li> <li>Object 对象的 prototype 中的 <code>__proto__</code> 是 null。</li></ul> <p><strong>prototype和contructor</strong></p> <ul><li>prototype：这个属性将被该类型创建的所有实例共享，但是这种共享是只读的。在任何一个实例中只能够用自己的同名属性覆盖这个属性，而不能改变它。换句话说，对象在读取某个属性时，总是先检查自身的属性表，如果有这个属性，则会返回这个属性，<strong>否则就会去读取prototype域</strong>，返回prototype域上的属性。</li> <li>contructor:即构造函数，在<strong>对象构造或者实例化时</strong>被调用的方法。通常使用该方法来初始化数据成员和所需资源。构造器contructor不能被继承，因此不能重写overriding，但可以被重载overloading.对象的contructor属性返回创建该对象的函数的引用。</li></ul> <h2 id="_2-fetch和ajax的区别"><a href="#_2-fetch和ajax的区别" class="header-anchor">#</a> 2.fetch和Ajax的区别</h2> <p>fetch基于Promise设计,不依赖于第三方</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>fetch(url).then(response =&gt; response.json())
+  .then(data =&gt; console.log(data))
+  .catch(e =&gt; console.log(&quot;Oops, error&quot;, e))
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>可以使用await来获取异步的数据</p> <ul><li><p>Fetch 请求默认是不带 cookie 的，需要设置 fetch(url, {credentials: 'include'})</p></li> <li><p>服务器返回 400，500 错误码时并不会 reject，只有网络错误这些导致请求不能完成时，fetch 才会被 reject。</p></li></ul> <p><a href="https://juejin.im/entry/599cfac56fb9a0249b4841b8" target="_blank" rel="noopener noreferrer">Ajax与Fetch比较<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://github.com/github/fetch" target="_blank" rel="noopener noreferrer">github-fetch<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_3-作用域和闭包"><a href="#_3-作用域和闭包" class="header-anchor">#</a> 3.作用域和闭包</h2> <p>闭包的三个特征：</p> <ol><li>函数嵌套函数</li> <li>函数内部可以引用外部的参数和变量</li> <li>参数和变量不会以垃圾回收机制回收</li></ol> <p>闭包常驻内存，使用不当容易造成内存泄露。</p> <h2 id="_4-宏任务和微任务"><a href="#_4-宏任务和微任务" class="header-anchor">#</a> 4.宏任务和微任务</h2> <p>主线程在任务队列中读取事件</p> <p>同步：synchronous
+异步：asynchronous</p> <p>异步有一个机制，就是遇到宏任务，先执行宏任务，将宏任务放入 eventqueue，然后在执行微任务，将微任务放入 eventqueue，并且这两个队列不是一个队列。当你往外拿的时候，先从微任务队列里<strong>拿回掉函数</strong>，然后再从宏任务队列里拿回掉函数。</p> <p>在当前的微任务没有执行完成时，是不会执行下一个宏任务的。</p> <p>在同步代码执行完成后才回去检查是否有异步任务完成，并执行对应的回调，而微任务又会在宏任务之前执行。</p> <p>微任务包括 process.nextTick ，promise ，MutationObserver，其中 process.nextTick 为 Node 独有。</p> <p>宏任务包括 script ， setTimeout ，setInterval ，setImmediate ，I/O ，UI rendering。</p> <p>执行顺序：宏任务 -&gt; 微任务 -&gt; 宏任务。</p> <p>node环境中，微任务的promise比async的优先级高</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//第一个例子：
+setTimeout(_ =&gt; console.log(4))
+
+new Promise(resolve =&gt; {
+  resolve()
+  console.log(1)
+}).then(_ =&gt; {
+  console.log(3)
+})
+console.log(2)
+
+
+//第二个例子：
+Promise.resolve().then(()=&gt;{
+  console.log('Promise1')  
+  setTimeout(()=&gt;{
+    console.log('setTimeout2')
+  },0)
+})
+
+setTimeout(()=&gt;{
+  console.log('setTimeout1')
+  Promise.resolve().then(()=&gt;{
+    console.log('Promise2')    
+  })
+},0)
+
+
+//第三个例子：
+console.log('1');
+
+setTimeout(function() {
+    console.log('2');
+    process.nextTick(function() {
+        console.log('3');
+    })
+    new Promise(function(resolve) {
+        console.log('4');
+        resolve();
+    }).then(function() {
+        console.log('5')
+    })
+})
+process.nextTick(function() {
+    console.log('6');
+})
+new Promise(function(resolve) {
+    console.log('7');
+    resolve();
+}).then(function() {
+    console.log('8')
+})
+
+setTimeout(function() {
+    console.log('9');
+    process.nextTick(function() {
+        console.log('10');
+    })
+    new Promise(function(resolve) {
+        console.log('11');
+        resolve();
+    }).then(function() {
+        console.log('12')
+    })
+})
+
+//第四个例子：
+async function async1() {
+  console.log('async1 start');
+  await async2();
+  console.log('async1 end');
+}
+async function async2() {
+  console.log('async2');
+}
+console.log('script start');
+setTimeout(function() {
+    console.log('setTimeout');
+}, 0);
+async1();
+new Promise(function(resolve) {
+    console.log('promise1');
+    resolve();
+  }).then(function() {
+    console.log('promise2');
+  });
+console.log('script end');
+
+//第五个例子
+ console.log(1)
+    setTimeout(() =&gt; {
+        console.log(2)
+    })
+    process.nextTick(() =&gt; {
+        console.log(3)
+    })
+    setImmediate(() =&gt; {
+        console.log(4)
+    })
+    new Promise(resolve =&gt; {
+        console.log(5)
+        resolve()
+        console.log(6)
+    })
+    .then(() =&gt; {
+        console.log(7)
+    })
+    Promise.resolve()
+    .then(() =&gt; {
+        console.log(8)
+        process.nextTick(() =&gt; {
+            console.log(9)
+        })
+    })
+
+//例子1输出顺序是：1、2、3、4
+//例子2输出顺序是：Promise1、setTimeout1、Promise2、setTimeout2
+//例子3输出前端环境输出顺序是： 1、7、6、8、2、4、9、11、3、10、5、12
+//例子3前端环境输出顺序是：1、7、6、8、2、4、3、5、9、11、10、12
+//例子4输出顺序是：script start、async1 start、async2、promise1、script end、promise2、async1 end、setTimeout
+//例子5输出顺序是：1、5、6、3、7、8、9、2、4
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br></div></div><p><a href="https://juejin.im/post/5b73d7a6518825610072b42b" target="_blank" rel="noopener noreferrer">微任务、宏任务与Event-loop<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://juejin.im/post/5b498d245188251b193d4059" target="_blank" rel="noopener noreferrer">事件循环机制之宏任务与微任务<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_5-this"><a href="#_5-this" class="header-anchor">#</a> 5.this</h2> <p>在一个函数的执行上下文中，this由该函数的调用者提供，由调用函数的方式来决定其指向</p> <ul><li>作为构造函数执行，构造函数中</li> <li>作为对象属性执行，<code>foo.fn()</code></li> <li>作为普通函数执行，指向全局</li> <li>用于<code>call</code> <code>apply</code> <code>bind</code>，<code>a.fn.call({name: 'B'})</code></li></ul> <p><strong>一、纯粹的函数调用</strong></p> <p>这时this属于全局对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var x = 1;
+function test() {
+   console.log(this.x);
+}
+test();  // 1
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>二、作为对象方法</strong></p> <p>函数作为对象的方法，那么this指它的上级对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+  console.log(this.x);
+}
+
+var obj = {};
+obj.x = 1;
+obj.m = test;
+
+obj.m(); // 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong>三、作为构造函数</strong></p> <p>这个函数可以生产一个新的对象，那么this此时指向这个新对象，不会指向全局。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+　this.x = 1;
+}
+
+var obj = new test();
+obj.x // 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>四、apply调用</strong></p> <p>apply参数为空，默认调用全局对象,this就指全局对象。如果apply参数为对象，this代表该对象。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var x = 0;
+function test() {
+　console.log(this.x);
+}
+
+var obj = {};
+obj.x = 1;
+obj.m = test;
+obj.m.apply() // 0
+//obj.m.apply(obj); //1
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><a href="http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html" target="_blank" rel="noopener noreferrer">阮一峰-JavaScript的this的用法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_6-深拷贝"><a href="#_6-深拷贝" class="header-anchor">#</a> 6.深拷贝</h2> <p>在使用React和Redux的时候经常要对数据操作但是不能影响原来的数据，比如操作一个对象，直接用<code>=</code> 号只是使用了引用，实际上指向同一个对象。</p> <p>浅拷贝对值类型来说是直接值传递的，不会出现什么问题，但是对于对象、数组等只是个引用，两个值指向同一个。</p> <p>深拷贝针对对象和数组等情况，不单拷贝了字面的值，而且引用不指向同一个对象。也就是说新值的改变不会影响旧值。</p> <p>对数组，使用新建数组然后push元素、slice()和concat()等方式能够复制第一级数组元素，如果数组里面的是数组或者对象，那么拷贝的还只是引用。</p> <p>相似的，深层拷贝失败也会出现在多层嵌套的对象上。对应的情况是新建对象然后指定键值，Object.assign({}, obj)和扩展运算符（...）</p> <p>通常写React时，最常用的深拷贝方式是：<strong>JSON.parse(JSON.stringify(xxx))</strong></p> <p>或者手动递归拷贝：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//版本一：清纯版
+function deepCopy(obj){
+    var newObj = instanceof(Array) ? [] : {};
+    if(typeof obj !== object){
+        return;
+    }
+    for(var i in obj){
+        newObj[i] = typeof obj[i] === 'object' ? deepCopy ： obj[i];
+    }
+    return newObj;
+}
+
+//版本二：明晰版
+function clone(obj){
+    var buf;
+    if(obj instanceof Array){
+        var i = obj.length;
+        buf = [];
+        while(i--){
+            buf[i] = clone(obj[i]);
+        }
+        return buf;
+    }else if(obj instanceof Object){
+        buf = {};
+        for(var i in obj){
+            buf[i] = clone(obj[i]);
+        }
+        return buf;
+    }else{
+        return buf = obj;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h2 id="_7-new怎么写"><a href="#_7-new怎么写" class="header-anchor">#</a> 7.new怎么写</h2> <p>new后面跟的是构造函数</p> <ol><li>新建一个对象</li> <li>将新创建的空对象的隐式原型指向其构造函数的显式原型</li> <li>this指向这个新对象</li> <li>返回新的创建对象</li></ol> <p>生成实例，this变量会绑定在实例对象上，也就是所有的实例都包含一个constructor属性，指向它们的构造函数。</p> <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new" target="_blank" rel="noopener noreferrer">new运算符<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，<a href="https://blog.csdn.net/nyist327/article/details/53790404" target="_blank" rel="noopener noreferrer">JavaScript中的new的作用<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_8-typeof与instanceof的区别是什么？"><a href="#_8-typeof与instanceof的区别是什么？" class="header-anchor">#</a> 8.typeof与instanceof的区别是什么？</h2> <p>typeof用来判断一个变量的类型，</p> <ul><li>数字类型返回number</li> <li>字符串类型返回 string</li> <li>布尔类型返回boolean</li> <li>对象、数组、null返回的值是object</li> <li>函数类型返回function</li> <li>不存在的变量、函数或者undefined返回undefined</li></ul> <p>instanceof用来判断某个对象是否被另一个类构造（该类的实例化对象）</p> <h2 id="_9-什么是冒泡和捕获"><a href="#_9-什么是冒泡和捕获" class="header-anchor">#</a> 9.什么是冒泡和捕获</h2> <p>事件冒泡是指事件开始时由最具体的元素接收，然后逐级向上传播到较为不具体的节点（document对象）。由外到内</p> <p>事件捕获是指不太具体的元素更早地接收事件，而最具体的节点最后接收到事件。</p> <p>阻止冒泡：stopPropagation()</p> <h2 id="_10-ajax创建过程"><a href="#_10-ajax创建过程" class="header-anchor">#</a> 10.Ajax创建过程</h2> <ol><li>创建XMLHttpRequest对象，也就是创建一个异步调用对象</li> <li>设置响应HTTP请求状态变化的函数</li> <li>打开一个新的HTTP请求，并指定该HTTP请求的方法，URL及验证信息</li> <li>发送HTTP请求</li> <li>在响应回调函数中，根据改变状态和请求状态码，获取异步请求返回的数据</li> <li>渲染返回的数据
+属性：onreadystatechange、responseText、responseXML、status/statusText</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState === 4 &amp;&amp; this.status === 200) {
+      console.log(this.responseText);
+    }
+  };
+  xhttp.open(&quot;GET&quot;, &quot;/&quot;, true);
+  xhttp.send();
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_11-对es6的了解"><a href="#_11-对es6的了解" class="header-anchor">#</a> 11.对ES6的了解</h2> <ul><li>模板字符串  ${}</li> <li>箭头函数</li> <li>for-of</li> <li>剩余参数和默认参数</li> <li>let和const</li> <li>Symbol</li> <li>module： import,export</li> <li>解构赋值</li> <li>Promise</li> <li>类的概念</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>//类的定义
+class SkinnedMesh extends THREE.Mesh {
+  constructor(geometry, materials) {
+    super(geometry, materials);
+
+    this.idMatrix = SkinnedMesh.defaultMatrix();
+    this.bones = [];
+    this.boneMatrices = [];
+    //...
+  }
+  update(camera) {
+    //...
+    super.update();
+  }
+  get boneCount() {
+    return this.bones.length;
+  }
+  set matrixType(matrixType) {
+    this.idMatrix = SkinnedMesh[matrixType]();
+  }
+  static defaultMatrix() {
+    return new THREE.Matrix4();
+  }
+}
+
+//类的声明
+const instance = new SkinnedMesh();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h2 id="_12-promise"><a href="#_12-promise" class="header-anchor">#</a> 12.Promise</h2> <p>问题：</p> <ul><li>Promise解决的痛点是什么？</li> <li>如何使用Promise？</li> <li>能不能手写一个polyfill？</li></ul> <p>解决痛点是回调地狱</p> <ol><li>嵌套层次很深，难以维护</li> <li>无法正常使用return和throw</li> <li>无法正常检索堆栈信息</li> <li>多个回调之间难以建立联系</li></ol> <p><strong>基本用法：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>new Promise(请求1)
+    .then(请求2(请求结果1))
+    .then(请求3(请求结果2))
+    .then(请求4(请求结果3))
+    .then(请求5(请求结果4))
+    .catch(处理异常(异常信息))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>常用API</strong></p> <ul><li>Promise.resolve(value)
+<ul><li>如果传入的 value 本身就是 Promise 对象，则该对象作为 Promise.resolve 方法的返回值返回。</li> <li>传入 thenable 对象，返回 Promise 对象跟随 thenable 对象的最终状态。</li> <li>其他情况以该值为成功状态返回一个 Promise 对象。</li></ul></li> <li>Promise.reject
+<ul><li>返回状态是rejected</li></ul></li> <li>Promise.race
+<ul><li>多个 Promise 任务同时执行，返回最先执行结束的 Promise 任务的结果，不管这个 Promise 结果是成功还是失败。</li></ul></li> <li>Promise.all
+<ul><li>如果全部成功执行，则以数组的方式返回所有 Promise 任务的执行结果。 如果有一个 Promise 任务 rejected，则只返回 rejected 任务的结果。</li></ul></li></ul> <p>一个 Promise 对象有三个状态，并且状态一旦改变，便不能再被更改为其他状态。</p> <p>pending，异步任务正在进行。
+resolved (也可以叫fulfilled)，异步任务执行成功。
+rejected，异步任务执行失败。</p> <p>如果then里不返回Promise会怎样？
+.then()接受两个函数作为参数，分别代表fulfilled和rejected
+外层的then会等里面的then先执行完再执行</p> <p>Promise实现队列</p> <p><a href="https://juejin.im/post/5b31a4b7f265da595725f322" target="_blank" rel="noopener noreferrer">面试精选之Promise<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_13-函数节流与函数防抖"><a href="#_13-函数节流与函数防抖" class="header-anchor">#</a> 13.函数节流与函数防抖</h2> <ul><li>函数节流：指定时间间隔内只会执行<strong>一次</strong> 任务。通常使用锁的标记</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function throttle (fn, interval = 100) {
+    let canRun = ture;
+    return function () {
+        if (! canRun) return;
+        canRun = false;
+        setTimeout(() =&gt; {
+        fn.apply(this, arguments);
+        canRun = true;
+        }, interval);
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>函数防抖：任务频繁触发的情况下，只有任务触发的间隔超过<strong>指定间隔</strong> 的时候，任务才会执行。例如clearTimeout(timeout);</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function debounce (fn, interval = 300) {
+    let timer = null;
+    return function () {
+        clearTimeout(timer);
+        setTimeout(() =&gt; {
+        fn.apply(this, arguments);
+        }, interval);
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="_14-变量提升"><a href="#_14-变量提升" class="header-anchor">#</a> 14.变量提升</h2> <p>函数及变量的声明都将被提升到函数的最顶部，函数被提升到变量声明之上。
+使用let不会被提升</p> <p>经典问题：<strong>生成十个按钮，每个按钮点击的时候弹出1-10</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//ES3的写法
+var i = 0;
+for (i =1 ; i &lt;= 10; i++)
+{
+    (function(i){
+        var btn = document.createElement('button');
+        btn.innerText = i;
+        btn.onclick = function(){
+            alert(i)
+        };
+        document.body.appendChild(btn);
+    })(i);
+}
+
+//#ES6的写法
+for (let i =1 ; i &lt;= 10; i++){  
+    var btn = document.createElement('button');
+    btn.innerText = i;
+    btn.onclick = function(){
+        alert(i) 	};
+	document.body.appendChild(btn);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><a href="https://segmentfault.com/a/1190000008887645" target="_blank" rel="noopener noreferrer">深入理解JavaScript立即执行函数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_15-作用域"><a href="#_15-作用域" class="header-anchor">#</a> 15.作用域</h2> <p>**作用域：**每个函数有各自的作用域，只有在函数内部才可以访问到该函数的变量。操作变量时先在内部找，如果找不到，向外查找。记得如果内部有变量声明的话变量会提升到作用域顶部，而且是没有赋值的，变成了undefined，因此不会跑到外层作用域寻找变量。
+作用域是名字和实体的绑定有效的那部分程序。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var bar = 1;
+function test(){
+  console.log(bar); //undefined
+  var bar = 2;
+  console.log(bar);  //2
+}
+test();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><a href="https://www.kancloud.cn/kancloud/you-dont-know-js-scope-closures/516610" target="_blank" rel="noopener noreferrer">词法作用域<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><strong>函数提升优先于变量提升：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var getName=function(){
+  console.log(2);
+}
+
+function getName(){
+  console.log(1);
+}
+
+getName();
+//结果为2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>上面结果不是1，函数优先提升会放在匿名函数的上面，然后才是getName变量声明。函数是JavaScript中的一等公民，所以在写JS代码的时候可以执行函数，而函数的定义在执行后面是可以的，因为在预编译的时候函数声明会提前；如果同一个作用域存在多个相同的函数声明，后面会覆盖前面的。</p> <p><strong>没有块作用域</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test(){
+    var tmp;
+    tmp =2;
+    {
+        tmp =4;
+    }
+    console.log(tmp);   //4
+}
+test();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>JavaScript没有块作用域，只有全局作用域和函数作用域。</p> <p><strong>在深刻体会一下：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var tmp = 3;
+function foo(){
+    tmp = 10;
+    alert(tmp);
+}
+foo();  // 10
+alert(tmp);  //3
+
+
+//等价于
+function foo(){
+	var tmp;
+    tmp = 10;
+    alert(tmp);
+}
+var tmp = 3;
+foo();
+alert(tmp);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>最后的tmp为3是因为函数中的tmp并没有调用函数外的tmp，或者想象成foo()的定义放在了var tmp =3之前，虽然声明了tmp = 10,后来被覆盖成了3.</p> <p>闭包能够实现类似块级作用域的效果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function foo() {
+    var x = 1;
+    if (x) {
+        (function () {
+            var x = 2;
+            // some other code
+        }());
+    }
+    // x is still 1.
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>建议：</p> <ul><li>先声明，后使用</li> <li>使用let替代var</li></ul> <p>参考：</p> <p><a href="http://www.runoob.com/js/js-hoisting.html" target="_blank" rel="noopener noreferrer">JavaScript变量提升<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://www.cnblogs.com/liuhe688/p/5891273.html" target="_blank" rel="noopener noreferrer">JavaScript系列：变量提升和函数提升<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://segmentfault.com/a/1190000003114255" target="_blank" rel="noopener noreferrer">JavaScript作用域和变量提升<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://segmentfault.com/a/1190000014401234" target="_blank" rel="noopener noreferrer">使用let<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_16-闭包"><a href="#_16-闭包" class="header-anchor">#</a> 16.闭包</h2> <p>含义：闭包能够读取其他函数内部变量的函数</p> <p>作用和原理：因为闭包只有在被调用时才执行操作，所以它可以被用来定义控制结构。</p> <p>多个函数可以使用同一个相同的环境，这使得它们可以通过改变那个环境相互交流</p> <p>闭包可以用来实现对象系统</p> <p>使用场景：</p> <ol><li>采用函数引用方式的setTimeout调用</li> <li>将函数关联到对象的实例方法</li> <li>封装相关的功能集</li> <li>实现静态变量</li> <li>缓存数据、柯里化</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>function a(){
+    var i=0;
+    function b(){
+        alert(++i);
+    }
+    return b;
+}
+var c=a();
+c();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>这段代码输出的是什么？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    for (var i = 0; i &lt; 5; ++i) {
+    
+         setTimeout(function () {
+    
+                 console.log(i + ' ');
+    
+            }, 1000);
+    
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>答案是：5 5 5 5 5</p> <p>JavaScript是单线程执行，setTimeout是异步执行函数，等for循环结束之后执行异步队列中的事件，此时i已经变成5了，所以控制台输出的i都是同一个</p> <p>改进的方法是使用立即执行函数来创建新的闭包函数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    for (var i = 0; i &lt; 5; ++i) {
+    
+          (function (i) {
+    
+                setTimeout(function () {
+    
+                      console.log(i + ' ');
+    
+                }, 1000);
+    
+          }(i));
+    
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>这回结果是：0 1 2 3 4</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    var z=10;
+    function foo(){
+        console.log(this.z);
+    }
+    (function(funArg){
+    
+        funArg();
+        var z=20;
+    
+    })(foo);
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>function foo(){
+  function bar(a){
+    i =  3;
+    console.log(a + i);
+  }
+  for(var i= 0; i &lt; 10; i++){
+    bar(i * 2);
+  }
+}
+
+foo();
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>答案是 3  11  11   11   11   11 ...无限循环
+我也好惊讶，怎么console.log变异步了？呜，后来搜了一下，bing是我认识的人写的一篇博客，哈哈哈
+<a href="https://www.cnblogs.com/sevenskey/p/5476386.html" target="_blank" rel="noopener noreferrer">console.log是异步的吗？<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function m(){
+  var i =2;
+  return function(){
+    console.log(i++);
+  }
+}
+
+var F1 = m();
+
+var F2 = m();
+
+F1();
+F1();
+F2();
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>答案是  2 3 2
+记得，加括号的时候才是调用！</p> <h2 id="_17-关于offsetleft、scrolltop、clienttop"><a href="#_17-关于offsetleft、scrolltop、clienttop" class="header-anchor">#</a> 17.关于offsetLeft、scrollTop、clientTop</h2> <ul><li>网页可见区域宽： document.body.clientWidth;</li> <li>网页可见区域高： document.body.clientHeight;</li> <li>网页可见区域宽： document.body.offsetWidth   (包括边线的宽);</li> <li>网页可见区域高： document.body.offsetHeight  (包括边线的宽);</li> <li>网页正文全文宽： document.body.scrollWidth;</li> <li>网页正文全文高： document.body.scrollHeight;</li> <li>网页被卷去的高： document.body.scrollTop;</li> <li>网页被卷去的左： document.body.scrollLeft;</li> <li>网页正文部分上： window.screenTop;</li> <li>网页正文部分左： window.screenLeft;</li> <li>屏幕分辨率的高： window.screen.height;</li> <li>屏幕分辨率的宽： window.screen.width;</li> <li>屏幕可用工作区高度： window.screen.availHeight;</li> <li>屏幕可用工作区宽度：window.screen.availWidth;</li></ul> <p><a href="https://www.cnblogs.com/seven_cheng/archive/2009/11/16/1603787.html" target="_blank" rel="noopener noreferrer">Js中 关于top、clientTop、scrollTop、offsetTop<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_18-commonjs和es6-module的区别"><a href="#_18-commonjs和es6-module的区别" class="header-anchor">#</a> 18.CommonJS和ES6 Module的区别</h2> <ul><li><p>es6</p> <ul><li>export : '可以输出多个，输出方式为 {}' ，</li> <li>export default : ' 只能输出一个 ，可以与export 同时输出，但是不建议这么做'，</li> <li><strong>解析阶段确定对外输出的接口，解析阶段生成接口</strong></li> <li>模块不是对象，加载的不是对象，</li> <li>可以单独加载其中的某个接口（方法），</li> <li>静态分析，动态引用，输出的是值的引用，值改变，引用也改变，即原来模块中的值改变则该加载的值也改变，</li> <li>this 指向undefined</li></ul></li> <li><p>commonJS</p> <ul><li>module.exports = ... : '只能输出一个，且后面的会覆盖上面的' ，</li> <li>exports. ... : ' 可以输出多个'，</li> <li><strong>运行阶段确定接口，运行时才会加载模块</strong></li> <li>模块就是对象，加载的是该对象，</li> <li>加载的是整个模块，即将所有的接口全部加载进来，</li> <li>输出的是值的<strong>拷贝</strong>，即原来模块中的值改变不会影响已经加载的该值，</li> <li>this 指向当前模块</li></ul></li></ul> <h2 id="_19-创建对象的几种方式"><a href="#_19-创建对象的几种方式" class="header-anchor">#</a> 19.创建对象的几种方式</h2> <ul><li>工厂模式</li> <li>构造函数模式</li> <li>原型模式</li> <li>构造函数模式和原型模式</li> <li>动态原型模式</li> <li>寄生构造函数模式</li> <li>稳妥构造函数模式</li></ul> <p><a href="https://xxxgitone.github.io/2017/06/10/JavaScript%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%83%E7%A7%8D%E6%96%B9%E5%BC%8F/" target="_blank" rel="noopener noreferrer">JavaScript创建对象的七种方式<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_20-javascript实现继承方式"><a href="#_20-javascript实现继承方式" class="header-anchor">#</a> 20.JavaScript实现继承方式</h2> <p>利用原型链来实现继承</p> <p>构造函数设置了一个prototype属性，所有实例对象需要共享的属性和方法都放在这个对象里面，而那些不需要共享的属性和方法，就放在构造函数里面。</p> <ul><li>原型链继承</li> <li>构造函数继承</li> <li>组合继承</li> <li>寄生组合式继承</li> <li>extends继承</li></ul> <p><strong>1. 原型链继承（父和子都用prototype）</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Parent () {
+    this.name = 'kevin';
+}
+
+Parent.prototype.getName = function () {
+    console.log(this.name);
+}
+
+function Child () {
+
+}
+
+Child.prototype = new Parent();
+
+var child1 = new Child();
+
+console.log(child1.getName()) // kevin
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ul><li>引用类型的属性被所有实例共享</li> <li>在创建Child的实例时，不能向Parent传参</li></ul> <p><strong>2. 构造函数继承(子类调用父类并call(this))</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Parent () {
+    this.names = ['kevin', 'daisy'];
+}
+
+function Child () {
+    Parent.call(this);
+}
+
+var child1 = new Child();
+
+child1.names.push('yayu');
+
+console.log(child1.names); // [&quot;kevin&quot;, &quot;daisy&quot;, &quot;yayu&quot;]
+
+var child2 = new Child();
+
+console.log(child2.names); // [&quot;kevin&quot;, &quot;daisy&quot;]
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ul><li>可以避免属性被所有实例共享</li> <li>可以在Child中向Parent传参</li> <li>不足：方法在构造函数中定义，方法每次创建实例都会被创建一遍</li></ul> <p><a href="https://github.com/mqyqingfeng/Blog/issues/16" target="_blank" rel="noopener noreferrer">JavaScript深入继承之多种方式和优缺点<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><strong>3. 组合继承</strong>
+结合原型链和构造函数</p> <p>这是最最常用的继承方式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Parent (name) {
+    this.name = name;
+    this.colors = ['red', 'blue', 'green'];
+}
+
+Parent.prototype.getName = function () {
+    console.log(this.name)
+}
+
+function Child (name, age) {
+
+    Parent.call(this, name);
+    
+    this.age = age;
+
+}
+
+Child.prototype = new Parent();
+Child.prototype.constructor = Child;
+
+var child1 = new Child('kevin', '18');
+
+child1.colors.push('black');
+
+console.log(child1.name); // kevin
+console.log(child1.age); // 18
+console.log(child1.colors); // [&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;, &quot;black&quot;]
+
+var child2 = new Child('daisy', '20');
+
+console.log(child2.name); // daisy
+console.log(child2.age); // 20
+console.log(child2.colors); // [&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;]
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><p><strong>4. 寄生组合式继承</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Parent (name) {
+    this.name = name;
+    this.colors = ['red', 'blue', 'green'];
+}
+
+Parent.prototype.getName = function () {
+    console.log(this.name)
+}
+
+function Child (name, age) {
+    Parent.call(this, name);
+    this.age = age;
+}
+
+Child.prototype = new Parent();
+
+var child1 = new Child('kevin', '18');
+
+console.log(child1)
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p><a href="http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html" target="_blank" rel="noopener noreferrer">廖雪峰-JavaScript继承机制的设计思想<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> , <a href="https://xxxgitone.github.io/2017/06/12/JavaScript%E5%85%AD%E7%A7%8D%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/" target="_blank" rel="noopener noreferrer">JavaScript六种继承方式<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://www.imooc.com/article/20162" target="_blank" rel="noopener noreferrer">前端面试必备之JS继承方式总结<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> , <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain" target="_blank" rel="noopener noreferrer">MDN-继承与原型链<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://github.com/mqyqingfeng/Blog/issues/16" target="_blank" rel="noopener noreferrer">JavaScript深入之继承的多种方式和优缺点<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://juejin.im/entry/5993eeaa51882524382f3c0b" target="_blank" rel="noopener noreferrer">JavaScript常见的继承方式<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_21-使用javascript实现简单的拖拽"><a href="#_21-使用javascript实现简单的拖拽" class="header-anchor">#</a> 21.使用JavaScript实现简单的拖拽</h2> <p>使用 JavaScript 实现拖拽的步骤：</p> <p>让元素捕获事件（mousedown, mousemove &amp; mouseup）
+单击并不释放，触发 mousedown，标记开始拖拽，并获取元素和鼠标的位置
+拖动鼠标，触发 mousemove，不断的获取鼠标的位置，并通过计算重新确定元素的位置
+释放师表，触发 mouseup，结束拖拽，确定元素位置并更新</p> <p><strong>被拖拽的元素必须是相对父元素定位，或者是绝对定位</strong></p> <p>鼠标位置可以在 event 对象中获得，常用的属性有：</p> <ul><li>clientX / clientY : 相对浏览器窗口坐标</li> <li>offsetX / offsetY : 相对事件目标对象坐标</li> <li>pageX / pageY : 相对 document 对象坐标</li></ul> <p><a href="https://www.ahonn.me/posts/2016051418#comment" target="_blank" rel="noopener noreferrer">JavaScript实现拖拽<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://x-front-team.github.io/2017/03/01/js%E5%AE%9E%E7%8E%B0%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C/" target="_blank" rel="noopener noreferrer">js实现拖拽效果<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://juejin.im/entry/59eebc39f265da431c6f7bdb" target="_blank" rel="noopener noreferrer">HTML5实现拖拽效果<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_22-柯里化"><a href="#_22-柯里化" class="header-anchor">#</a> 22.柯里化</h2> <p>柯里化是一种将对具有多个形参的函数的求值转换为对一组只有一个形参的函数的求值的技术。
+柯里化函数的真正能力是它们可以简化函数组合。一个函数可以接受任意数量的输入，但是只返回一个输出。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+function currying (fn, ...args1) {
+
+    return function (...args2) {
+
+        return fn(...args1, ...args2)
+
+    }
+}
+
+var increment = currying(add, 1)
+
+increment(2) === 3
+
+// true
+
+var addTen = currying(add, 10)
+
+addTen(2) === 12
+
+// true
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p><a href="https://github.com/mqyqingfeng/Blog/issues/42" target="_blank" rel="noopener noreferrer">JavaScript专题之函数柯里化<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://segmentfault.com/a/1190000008263193" target="_blank" rel="noopener noreferrer">邂逅函数柯里化<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.zhangxinxu.com/wordpress/2013/02/js-currying/" target="_blank" rel="noopener noreferrer">JS中的柯里化<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.zhihu.com/question/20037482" target="_blank" rel="noopener noreferrer">柯里化对函数式编程有何意义？<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://juejin.im/post/5c1a0d516fb9a049d05daee9" target="_blank" rel="noopener noreferrer">柯里化与函数组合<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_23-箭头函数"><a href="#_23-箭头函数" class="header-anchor">#</a> 23.箭头函数</h2> <p>箭头函数会继承外层函数调用的this</p> <p><strong>注意要点：</strong>
+（1）函数体内的this对象，就是<strong>定义时</strong>所在的对象，而不是使用时所在的对象。比如不要在对象里使用箭头函数
+（2）不可以当作构造函数，也就是说，<strong>不可以使用new命令</strong>，否则会抛出一个错误。
+（3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用Rest参数代替。
+（4）不可以使用yield命令，因此箭头函数不能用作Generator函数。
+（5）在动态上下文回调函数中慎用this</p> <p><a href="https://jingsam.github.io/2016/12/08/things-you-should-know-about-arrow-functions.html" target="_blank" rel="noopener noreferrer">少年，不要滥用箭头函数啊<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_24-如何避免javascript内存泄漏"><a href="#_24-如何避免javascript内存泄漏" class="header-anchor">#</a> 24.如何避免JavaScript内存泄漏</h2> <p>由于某些原因，内存没有被操作系统或可用内存池回收。</p> <p>JavaScript常见的内存泄漏：</p> <ol><li>意外的全局变量</li> <li>被遗忘的指针和回调函数</li> <li>脱离DOM的引用</li> <li>闭包</li></ol> <p><a href="https://jinlong.github.io/2016/05/01/4-Types-of-Memory-Leaks-in-JavaScript-and-How-to-Get-Rid-Of-Them/" target="_blank" rel="noopener noreferrer">4类JavaScript内存泄漏及如何避免<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_25-常用的数组方法有哪些？"><a href="#_25-常用的数组方法有哪些？" class="header-anchor">#</a> 25.常用的数组方法有哪些？</h2> <ul><li>copyWithin</li> <li>find</li> <li>findIndex</li> <li>fill</li> <li>entries</li> <li>keys</li> <li>values</li> <li>includes</li> <li>from</li> <li>of</li> <li>every</li> <li>some</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">7/18/2020, 2:14:15 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/interview/01-html-css.html" class="prev">
+        HTML+CSS
+      </a></span> <span class="next"><a href="/interview/03-vue.html">
+        Vue
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.630832b4.js" defer></script><script src="/assets/js/2.fd641dc6.js" defer></script><script src="/assets/js/57.50d4bfed.js" defer></script>
+  </body>
+</html>
