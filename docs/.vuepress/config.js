@@ -3,7 +3,6 @@ module.exports = {
         lineNumbers: true
     },
     title: '灰熊の博客',
-    description: '灰熊的博客',
     head: [
         ['link', { rel: 'icon', href: '/flower.ico' }],
     ],
