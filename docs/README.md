@@ -1,7 +1,6 @@
 ---
 home: true
 lang: zh-CN
-heroText: 我的博客
 heroImage: /shuguang.jpg
 actionText: 开始 →
 actionLink: /blog/
