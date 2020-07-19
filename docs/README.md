@@ -2,7 +2,7 @@
 home: true
 lang: zh-CN
 heroText: 我的博客
-heroImage: /gongsunli.jpg
+heroImage: /shuguang.jpg
 actionText: 开始 →
 actionLink: /blog/
 features:
