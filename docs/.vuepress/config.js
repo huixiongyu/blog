@@ -75,7 +75,8 @@ module.exports = {
                     children:[
                       '/book/React/00-reactjs-practice',
                       '/book/React/01-deep-learning-react-stack',
-                      '/book/React/02-react-state-management-and-common-refator'
+                      '/book/React/02-react-state-management-and-common-refator',
+                      '/book/React/03-React-Native-develop-practice',
                     ]
                 },
                 {
