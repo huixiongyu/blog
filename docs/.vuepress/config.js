@@ -55,6 +55,13 @@ module.exports = {
                 '',
                 'plan-and-record',
                 {
+                    title:'前端相关',
+                    collapsable: true,
+                    children:[
+                      '/book/HTML&CSS/02-css-secrets'
+                    ]
+                },
+                {
                     title:'JavaScript',
                     collapsable: true,
                     children:[
