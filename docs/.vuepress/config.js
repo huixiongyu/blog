@@ -98,7 +98,8 @@ module.exports = {
                     collapsable: true,
                     children:[
                         '/book/Python/03-Docker-Deep-Dive',
-                        '/book/Python/04-datastruct-python-description'
+                        '/book/Python/04-datastruct-python-description',
+                        '/book/Python/05-Python-tech-spiders'
                     ]
                 },
                 {
