@@ -103,6 +103,13 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'Java',
+                    collapsable: true,
+                    children: [
+                        '/book/Java/00-Head-First-Design-Pattern'
+                    ]
+                },
+                {
                     title: '数据库',
                     collapsable: true,
                     children:[
