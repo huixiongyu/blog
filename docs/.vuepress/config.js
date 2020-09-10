@@ -29,7 +29,7 @@ module.exports = {
                     title: '生活',
                     collapsable: true,
                     children: [
-                        '/blog/Life/2020-action-list',
+                        '/blog/Life/my-action-list',
                         '/blog/Life/train-habit',
                         '/blog/Life/about-PG-entrance-exam',
                         '/blog/Life/graduation-thesis'
