@@ -26,7 +26,7 @@
   * Python后端：Django
   * Java后端：SSM
 * 精通算法
-  * 2022年1月前刷完LeetCode算法题：1737道
+  * 2022年1月前刷完LeetCodeeasy和medium的算法题
   * 读完PAT刷题2本书
   * 读完《算法竞赛入门经典》3本书
   * 读完《算法导论》
@@ -61,9 +61,9 @@
 ## 2020年
 
 1. 解读lodash十个函数
-2. LeetCode刷题100道：1~50
+2. LeetCode刷题50道
 3. 完善聚合学习系统：React + hooks + TypeScript +  Egg
-   1. 牛客网、慕课网、哔哩哔哩、张鑫旭博客、gitchat和猫咪AV
+   1. 牛客网、慕课网、哔哩哔哩、张鑫旭博客、gitchat
 4. 学习React开发
    1. 慕课网-React16 + Redux实战企业级大众点评Web App
    2. 掘金-React Hooks与Immutable数据流实战
@@ -82,22 +82,29 @@
 
 ## 2021计划
 
+本年任务熟悉React和Vue，掌握数据结构，具备进入大厂的资格。
+
+技术上入门Java，兴趣上学会游泳、素描，日语掌握一定程度。
+
+了解Android、WebRTC和WebGL开发。
+
 1. 学完慕课网大前端课程
 2. 学完慕课网所有React课程
 3. 学完慕课网Java就业班课程
 4. 学完慕课网Java全栈课程
 5. Vue/React源码各看5遍
-6. 学习素描，上课至少3个月
-7. 刷完500道Leetcode题目
-8. 进入一线互联网公司：工资15k起
-9. 项目
+6. 刷完500道Leetcode题目
+7. 进入一线互联网公司：工资15k起
+8. 项目
    1. lodash源码解析
    2. 晓帐APP：移动端、PC、小程序
    3. 聚合学习系统
    4. 前端知识清单社区：React + hooks博客
    5. 博客：用JS刷Leetcode
-10. 学会游泳
-11. 通过日语N2
+9. 学会游泳
+10. 通过日语N2
+11. 完成前端知识清单：JS、CSS、TypeScript、Vue、React、Koa
+12. 清空花呗、借呗的贷款，并关闭
 
 ## 历史记录
 
