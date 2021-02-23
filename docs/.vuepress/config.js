@@ -29,7 +29,7 @@ module.exports = {
                     title: '生活',
                     collapsable: true,
                     children: [
-                        '/blog/Life/2020-action-list',
+                        '/blog/Life/my-action-list',
                         '/blog/Life/train-habit',
                         '/blog/Life/about-PG-entrance-exam',
                         '/blog/Life/graduation-thesis'
@@ -105,7 +105,15 @@ module.exports = {
                     collapsable: true,
                     children:[
                         '/book/Python/03-Docker-Deep-Dive',
-                        '/book/Python/04-datastruct-python-description'
+                        '/book/Python/04-datastruct-python-description',
+                        '/book/Python/05-Python-tech-spiders'
+                    ]
+                },
+                {
+                    title: 'Java',
+                    collapsable: true,
+                    children: [
+                        '/book/Java/00-Head-First-Design-Pattern'
                     ]
                 },
                 {
