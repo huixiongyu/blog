@@ -87,6 +87,13 @@ module.exports = {
                     ]
                 },
                 {
+                    title:'Angular',
+                    collapsable: true,
+                    children:[
+                      '/book/Angular/01-angular-up-and-running',
+                    ]
+                },
+                {
                     title:'小程序',
                     collapsable: true,
                     children:[
