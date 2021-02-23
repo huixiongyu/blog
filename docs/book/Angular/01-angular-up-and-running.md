@@ -360,7 +360,38 @@ export class CreateStockComponent {
 * 向服务器获取数据或发送数据
 * 需要封装不特定于任何组件或者可以跨组件重用的应用的应用程序逻辑
 * 需要跨组件共享数据，尤其是这些组件彼此互不知道的时候。
+
 服务它是从组件中抽象出来的关于“怎么做”的一层，以便组件专注于”做什么“，而服务则决定了”怎么做“。
+
+在Angular模块中的providers数组是告诉Angular去创建服务的单例，并使其对任何需要它的类或组件可用。当我们在模块级别注册它时，意味着模块中的任何需要它的组件都会被注入同一个相同的实例。
+
+依赖注入时在静态语言中出现的，这些语言常见于服务器端编程。简单地说，依赖注入是指某个类或函数会需要一个不是自己实例化的依赖对象。由其他对象（通常称为注入器）来负责提供这个对象及实例化这个对象。
+
+[dependency-injection](https://angular.io/guide/dependency-injection)
+
+两种实例化：
+
+```
+class MyDummyService {
+	getMyData() {
+		let httpService = new HttpService();
+		return httpService.get('my/api');
+	}
+}
+
+class MyDIService {
+	constructor(private httpService: HttpService) {}
+	getMyData() {
+		return this.httpService.get('my/api');
+	}
+}
+```
+
+对于很简单的需求，将Angular的依赖注入服务看作一个非常简单的键值存储就足够了，任何组件或类在初始化时都可以向它请求一个key。
+
+我们创建的每一个服务都需要向注入器注册一个提供者。然后，任何其他类都可以请求服务，而注入器将负责提供服务。
+
+请注意，我们将messageService设置为public的，这样就可以在模板中访问它了。我们确认只有一个MessageService实例存在，它在两个组件之间共享。
 
 ## 第9章：Angular与HTTP请求
 
