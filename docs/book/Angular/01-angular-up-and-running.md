@@ -317,8 +317,42 @@ describe('AppComponent', () => {
 直接通过myStockField.value访问它的值，然后将其作为参数传递给函数。
 
 ## 第7章：使用响应式表单
+响应式表单的核心是FormControl，它直接表示模板中的单个form元素。因此，任何响应式表单都只是一系列分组的FormControl。在FormControl级别，我们还会指定初始值和验证器（同步和异步）。
 
+当我们需要跟踪任何单个表单元素（比如输入框或复选框）的状态和值时，就可以使用FormContrl。
+```
+public stockForm: FormGroup = new FormGroup({
+  name: new FormControl(null, Validators.required),
+  code: new FormControl(null, [Validators.required, Validators.minLength(2)]),
+  price: new FormContrl(0, [Validators.required, Validators.min(0)])
+});
+```
 
+官方内置的[validator](https://angular.io/api/forms/Validators)
+
+FormBuilder本质上是一种语法糖，允许我们快速创建表单组和表单控件元素，而不需要手动地去new每个元素。
+
+```
+public stockForm: FormGroup;
+constructor(private fb: FormBuilder) {
+  this.createForm();
+}
+createForm() {
+  this.stockForm = this.fb.group({
+    name: [null, Validators.required],
+    code: [null, [Validators.required, Validators.minLength(2)]],
+    price: [0, [Validators.required, Validators.min(0)]]
+  })
+}
+```
+表单中获取值：
+```
+export class CreateStockComponent {
+  get name() { return this.stockForm.get('name'); }
+  get price() { return this.stockForm.get('price'); }
+  get code() { return this.stockForm.get('code'); }
+}
+```
 
 ## 第8章：Angular服务
 
