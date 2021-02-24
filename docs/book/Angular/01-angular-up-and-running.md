@@ -393,6 +393,20 @@ class MyDIService {
 
 请注意，我们将messageService设置为public的，这样就可以在模板中访问它了。我们确认只有一个MessageService实例存在，它在两个组件之间共享。
 
+当组件请求依赖时，Angular就会检查注入器树中距离最近的注入器，看它是否匹配。如果匹配，就用它来提供。如果没有，就检查父注入器，一直到根注入器。
+
+**RxJS和Observables：使用异步操作**
+
+Promise比起回掉来说，是一种更好的、惯用的处理一步行为的方法。同时，Angular为了避免它的一些缺陷，用Observable代替了它。
+
+* Promise是对单个异步事件的操作，而Observable允许我们处理零个或多个异步事件流。
+* 与Promise不同，Observ able可以被取消。也就是说，Promise无论执行成功还是出错handler都会最终被调用，而Observable不同，如果我们不再关心它时，我们就可以取消订阅，同时不再处理数据。
+* Observable使我们能够很容易地组合和创建一个转换链。
+
+[ReactiveX官方文档](http://reactivex.io/intro.html)
+
+
+
 ## 第9章：Angular与HTTP请求
 
 
