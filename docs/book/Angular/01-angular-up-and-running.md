@@ -526,7 +526,82 @@ switchMap有一个好处，除了可以将一种Observable转换为另一种Obse
 
 ## 第10章：对服务器进行单元测试
 
+```
+describe('StockService', () => {
+	beforeEach(() => {
+		TestBed.configureTestingModule({
+			providers: [StockService]
+		});
+	});
+	
+	it('should be created', inject([StockService],
+		(service: StockService) => {
+		expect(service).toBeTruthy();
+		}))
+})
+```
 
+
+
+在it块中是真正的测试，我们不算是只传递测试函数传递给它，我们调用了inject，它是Angular测试工具提供的一个函数。我们在第一个参数中传递一个数组，即需要注入到测试中的Angular服务。第二个参数是一个函数，它获取参数的顺序与我们传递给数组的顺序相同，在这个函数中编写实际的测试。
+
+**模拟服务测试组件：**
+
+```
+beforeEach(() => {
+	fixture = TestBed.createComponent(StockListComponent);
+	component = fixture.componentInstance;
+	// 通过注入方式获取服务
+	stockService = fixture.debugElement.injector.get(StockService);
+	let spy = spyOn(stockService, 'getStocks')
+		.and.returnValue([
+			new Stock('Mock Stock', 'MS', 800, 900, 'NYSE')
+		]);
+	fixture.detectChanges();
+})
+```
+
+一旦我们获得服务对象，我们就可以使用Jasmine 的spy来监听服务商的不同方法。Spy（无论是来自Jasmine还是其他框架）允许我们对任何函数或方法进行代理，记录它的调用和参数，也可以指定我们自己的返回值。
+
+**用假服务测试组件：**
+
+如果你有一个重复的测试用例，那么创建一个可以重用的假服务也是可以的。
+
+```
+TestBed.configureTestingModule({
+	declarations: [ StockListComponent, StockItemComponent ],
+	providers: [{
+		provide: StockService,
+		useValue: stockServiceFake
+	}]
+})
+```
+
+我们告诉Angular，每当有人请求StockService(用provide指定)时，就提供stockServiceFake（由useValue指定）给它。这会覆盖类实例的默认提供行为。
+
+获取服务对象（即使是假服务）的推荐方法是通过注入器。这是因为我们在测试中创建的fakeStockService对象和Angular用依赖注入提供的对象是不一样的。
+
+**异步单元测试：**
+
+```
+fixture.whenStable().then(() => {
+	fixture.detectChanges();
+	expect(component.message)
+		.toEqual("Tock with code MNTS successfully created");
+	const messageEl = fixture.debugElement.query(
+		By.css('.message')).nativeElement;
+	expect(messageEl.textContent)
+		.toBe('Stock with code MNTS successfully created');
+});
+```
+
+**在异步测试中，使用whenStable总错不了。**
+
+我们用fakseAsync函数取代了whenStable函数，现在用一个简单的tick()函数完成同样的工作。这样代码看起来更“线性”一些，可读性更好。
+
+在假异步测试中，实际有两个方法可以模拟时间的流逝，分别是tick()和flush()。tick模拟经过了一段时间（可以传递一个毫秒数的参数给它）。flush则使用次数作为参数，次数表示任务队列被完成过多少次。
+
+httpBackend.expectOne还支持用一个HttpRequest对象作为一个config对象，来代替URL参数和method参数。
 
 ## 第11章：路由
 
