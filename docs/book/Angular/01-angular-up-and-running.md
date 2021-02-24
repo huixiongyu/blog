@@ -405,6 +405,56 @@ Promise比起回掉来说，是一种更好的、惯用的处理一步行为的�
 
 [ReactiveX官方文档](http://reactivex.io/intro.html)
 
+```
+getStocks(): Observable<Stock[]> {
+	return ObservableOf(this.stocks);
+}
+
+// 使用者订阅
+ngOnInit() {
+	this.stockService.getStocks()
+		.subscribe(stocks => {
+			this.stocks = stocks;
+		})
+}
+createStock(stockForm) {
+	if(stockForm.valid) {
+		this.stockService.createStock(this.stock)
+			.subscribe((result: any) => {
+				this.message = result.msg;
+				this.stock = new Stock('', '', 0, 0, 'NASDAQ');
+			}, (err) => {
+				this.message = err.msg;
+			})
+	} else {
+		console.error('Stock form is in an invalid state');
+	}
+}
+```
+
+模板处理异步行为：
+
+ngFor表达式中使用了管道操作。Angular提供了一个async管道，它允许我们绑定Observable。然后，Angular就会负责等待Observable发送事件，再直接将结果显示出来。它为我们省去了手动订阅Observable的那一步。
+
+```
+export class StockListComponent implements OnInit {
+	public stocks$: Observable<Stock[]>;
+	constructor(private stockService: StockService){}
+	ngOnInit() {
+		this.stocks$ = this.stockService.getStocks();
+	}
+	onToggleFavorite(stock: Stock) {
+		this.stockService.toggleFavorite(stock);
+	}
+}
+
+// 模板的使用
+<app-stock-item *ngFor="let stock of stocks$ | async"
+	[stock]="stock"
+	(toggleFavorite)="onToggleFavorite($event)">
+</app-stock-item>
+```
+
 
 
 ## 第9章：Angular与HTTP请求
