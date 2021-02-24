@@ -455,11 +455,48 @@ export class StockListComponent implements OnInit {
 </app-stock-item>
 ```
 
-
-
 ## 第9章：Angular与HTTP请求
 
+首先我们需要在App Module中添加对HttpClientModule的依赖。将src/app/app.module.ts的文件导入HttpClientModule，而不是HttpModule。
 
+在需要用到请求的文件中导入HttpClient
+
+```
+import { HttpClientModule } from '@angular/common/http';
+
+import { HttpClient } from '@angular/common/http';
+```
+
+跨域问题，Angular App根文件下创建一个proxy.conf.json文件
+
+```
+{
+	"/api": {
+		"target": "http://localhost:3000",
+		"secure": false
+	}
+}
+```
+
+理解HttpInterceptor的一个关键是它的链式结构。在请求时会都可以决定是否要修改请求。它可以通过使用调用HttpHandler继续将请求传递给后续链。如果只有一个拦截器，那么handler将简单地将请求对象发送给后端。如果有更多的拦截器，则传递给链中的下一个拦截器。
+
+```
+providers: [
+	StockService,
+	AuthService,
+	{
+		provide: HTTP_INTERCEPTIORS,
+		useClass: StockAppInterceptor,
+		multi: true,
+	}
+]
+```
+
+HttpRequest和HttpResponse实例都是不可变的。因此，我们需要修改它们，必须创建新的不可变实例。
+
+**Observable进阶**
+
+从根本上说，一个Observable只是一个连接生产者和消费者的函数。冷信号会创建生产者，而热信号则是共享生产者的。
 
 ## 第10章：对服务器进行单元测试
 
