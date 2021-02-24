@@ -498,6 +498,32 @@ HttpRequest和HttpResponse实例都是不可变的。因此，我们需要修改
 
 从根本上说，一个Observable只是一个连接生产者和消费者的函数。冷信号会创建生产者，而热信号则是共享生产者的。
 
+如果有人订阅了一个Angular Observable，就会为这个对象创建出生产者。这就是为什么每次订阅，我们都会有一个新的生产者。
+
+[Hot vs Code Observables](https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339)
+
+在App中使用AsyncPipe是要注意，如果在同一个Observable上使用多个异步管道而不是共享底层Observable时，会导致重复的服务器调用。
+
+```
+ngOnInit() {
+	this.stocks$ = this.searchTerms.pipe(
+		starWith(this.searchString),
+		debounceTime(500),
+		distinctUntilChanged(),
+		switchMap((query) => this.stockService.getStocks(query)),
+		share()
+        );
+}
+```
+
+为了形成链，我们在Observable上使用了pipe操作符，然后就可以向管道函数添加任意数量的以参数形式构成的操作符。
+
+Observable操作符distinctUntilChanged()。这可以确保仅当新值与前一个值不同时才发出事件，从而节省更多的网络调用。
+
+switchMap有一个好处，除了可以将一种Observable转换为另一种Observable之外，它还能够取消旧的、正在运行的订阅。
+
+操作符参考：[rxjs operators](http://reactivex.io/rxjs/manual/overview.html#operators)
+
 ## 第10章：对服务器进行单元测试
 
 
